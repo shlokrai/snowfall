@@ -39,7 +39,7 @@ function AppContent() {
     <div className={`flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900 ${isGlobal ? 'global-theme' : ''}`}>
       {isSnowingGlobally && <GlobalSnowfall />}
       {isLoading && <LoadingScreen transitionState={transitionState} />}
-      <Header toggleSnowfall={() => setIsSnowingGlobally(!isSnowingGlobally)} />
+      <Header isSnowingGlobally={isSnowingGlobally} toggleSnowfall={() => setIsSnowingGlobally(!isSnowingGlobally)} />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />

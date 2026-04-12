@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun, IndianRupee } from 'lucide-react';
 import globalIcon from '../assets/global-icon.png';
 
-const Header = ({ toggleSnowfall }) => {
+const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
   });
@@ -49,13 +49,13 @@ const Header = ({ toggleSnowfall }) => {
               <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="2" className="fill-brand-50/50 dark:fill-brand-900/50" />
               
               <g clipPath="url(#snow-clip)">
-                <circle cx="35" cy="-10" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
-                <circle cx="55" cy="-15" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
-                <circle cx="70" cy="-5" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
-                <circle cx="45" cy="-20" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-4" />
-                <circle cx="50" cy="-25" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
-                <circle cx="30" cy="-12" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
-                <circle cx="80" cy="-18" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
+                <circle cx="35" cy="-10" r="1.5" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-1" : "opacity-0"} />
+                <circle cx="55" cy="-15" r="2" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-2" : "opacity-0"} />
+                <circle cx="70" cy="-5" r="1.5" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-3" : "opacity-0"} />
+                <circle cx="45" cy="-20" r="1" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-4" : "opacity-0"} />
+                <circle cx="50" cy="-25" r="2" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-1" : "opacity-0"} />
+                <circle cx="30" cy="-12" r="1.5" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-3" : "opacity-0"} />
+                <circle cx="80" cy="-18" r="1" fill="currentColor" className={!isSnowingGlobally ? "animate-snow-2" : "opacity-0"} />
               </g>
 
               <path d="M15 65 L50 25 L85 65" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300" />
