@@ -5,6 +5,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-brand-50: 222 245 229;
+    --color-brand-200: 188 234 213;
+    --color-brand-400: 158 213 197;
+    --color-brand-600: 142 195 176;
+    --color-brand-800: 61 97 83;
+    --color-brand-900: 35 63 53;
+    --color-brand-950: 17 34 28;
+  }
+  
+  .global-theme {
+    --color-brand-50: 253 244 245;
+    --color-brand-200: 169 184 223;
+    --color-brand-400: 139 157 206;
+    --color-brand-600: 111 129 193;
+    --color-brand-800: 65 77 131;
+    --color-brand-900: 41 49 102;
+    --color-brand-950: 24 29 61;
+  }
+
   html {
     scroll-behavior: smooth;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;

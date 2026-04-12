@@ -9,13 +9,13 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#DEF5E5',   // Palette Color 1 (Lightest)
-          200: '#BCEAD5',  // Palette Color 2
-          400: '#9ED5C5',  // Palette Color 3
-          600: '#8EC3B0',  // Palette Color 4 (Darkest from image)
-          800: '#3D6153',  // Dark accent for readable secondary text
-          900: '#233F35',  // Dark accent for readable primary text
-          950: '#11221C',  // Deepest dark for bold headings
+          50: 'rgb(var(--color-brand-50) / <alpha-value>)',
+          200: 'rgb(var(--color-brand-200) / <alpha-value>)',
+          400: 'rgb(var(--color-brand-400) / <alpha-value>)',
+          600: 'rgb(var(--color-brand-600) / <alpha-value>)',
+          800: 'rgb(var(--color-brand-800) / <alpha-value>)',
+          900: 'rgb(var(--color-brand-900) / <alpha-value>)',
+          950: 'rgb(var(--color-brand-950) / <alpha-value>)',
         }
       },
       animation: {
