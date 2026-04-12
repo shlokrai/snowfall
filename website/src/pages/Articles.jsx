@@ -27,10 +27,10 @@ const Articles = ({ isGlobal }) => {
              <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
                    <span className="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
-                   <span className="text-xs font-semibold tracking-widest uppercase text-brand-100">Featured  Capital Raise</span>
+                   <span className="text-xs font-semibold tracking-widest uppercase text-brand-100">{isGlobal ? "Featured Cross-Border" : "Featured  Capital Raise"}</span>
                 </div>
                 <h2 className="text-4xl lg:text-6xl font-black mb-6 tracking-tighter leading-tight group-hover:text-brand-200 transition-colors">
-                  How to Build an Investor-Ready Data Room in 7 Days
+                  {isGlobal ? "Navigating Indian Subsidiary Setup in Under 45 Days" : "How to Build an Investor-Ready Data Room in 7 Days"}
                 </h2>
                 <div className="flex items-center gap-3 text-brand-200/80 font-medium mb-8">
                    <Calendar size={18} />
@@ -38,10 +38,10 @@ const Articles = ({ isGlobal }) => {
                    <span className="w-1.5 h-1.5 rounded-full bg-brand-600 mx-2"></span>
                    <span>6 min read</span>
                 </div>
-                <p className="text-xl text-brand-50/80 font-light leading-relaxed mb-10 max-w-lg">
-                  Raising capital in India requires absolute transparency. Learn exactly what tier-1 VCs want to see before writing that term sheet...
+                <p className="text-xl text-brand-50/80 font-light leading-relaxed mb-10 max-w-lg">        
+                  {isGlobal ? "Entering India means breaking through complex compliance barriers. Here's exactly what global HQs need to structure their local offices flawlessly..." : "Raising capital in India requires absolute transparency. Learn exactly what tier-1 VCs want to see before writing that term sheet..."}
                 </p>
-                <Link to="#" className="group/btn inline-flex items-center space-x-4 bg-brand-600 text-white px-8 py-4 rounded-full hover:bg-white hover:text-brand-950 transition-all shadow-lg hover:scale-105">
+                <Link to="#" className="group/btn inline-flex items-center space-x-4 bg-brand-600 text-white px-8 py-4 rounded-full hover:bg-white hover:text-brand-950 transition-all shadow-lg hover:scale-105">  
                    <span className="text-lg font-bold">Read Full Strategy</span>
                    <ArrowRight size={20} className="group-hover/btn:translate-x-1 transition-transform" />
                 </Link>
@@ -65,7 +65,7 @@ const Articles = ({ isGlobal }) => {
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-           
+
            {/* Article 1 */}
            <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
               <div>
@@ -73,13 +73,13 @@ const Articles = ({ isGlobal }) => {
                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tax Strategy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
                 </div>
                 <div className="text-sm font-bold text-brand-600 dark:text-brand-400 mb-3 flex items-center gap-2 uppercase tracking-wider">
-                   Compliance <span className="w-1 h-1 rounded-full bg-brand-400"></span> April 5
+                   {isGlobal ? "FDI Compliance" : "Compliance"} <span className="w-1 h-1 rounded-full bg-brand-400"></span> April 5
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-brand-950 dark:text-white leading-tight group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
-                  Tax Structuring for Series A Startups
+                  {isGlobal ? "Repatriating Profits: A Tax Guide for Foreign HQs" : "Tax Structuring for Series A Startups"}
                 </h4>
-                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">
-                  Don't lose a chunk of your raise to poor structuring. How our CAs blueprint your accounts before the term sheet hits...
+                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">  
+                  {isGlobal ? "Don't let DTAA clauses blindside you. How to structure your Indian operations to seamlessly remit profits back home without double taxation..." : "Don't lose a chunk of your raise to poor structuring. How our CAs blueprint your accounts before the term sheet hits..."}
                 </p>
               </div>
               <Link to="#" className="inline-flex items-center text-brand-950 dark:text-white font-bold group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
@@ -94,13 +94,13 @@ const Articles = ({ isGlobal }) => {
                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="B2B Network" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
                 </div>
                 <div className="text-sm font-bold text-brand-600 dark:text-brand-400 mb-3 flex items-center gap-2 uppercase tracking-wider">
-                   Networking <span className="w-1 h-1 rounded-full bg-brand-400"></span> March 28
+                   {isGlobal ? "Partnerships" : "Networking"} <span className="w-1 h-1 rounded-full bg-brand-400"></span> March 28        
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-brand-950 dark:text-white leading-tight group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
-                  Unlocking B2B Synergies: Case Study
+                  {isGlobal ? "Securing Your First Indian Enterprise Client" : "Unlocking B2B Synergies: Case Study"}
                 </h4>
-                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">
-                  How two founders inside the Snowfall Network cross-pollinated their client bases to generate ₹2Cr in native revenue within a quarter...
+                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">  
+                  {isGlobal ? "How a European SaaS provider used our local network to land a Top 10 Indian conglomerate as their anchor client in 2 months..." : "How two founders inside the Snowfall Network cross-pollinated their client bases to generate ₹2Cr in native revenue within a quarter..."}
                 </p>
               </div>
               <Link to="#" className="inline-flex items-center text-brand-950 dark:text-white font-bold group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
@@ -115,13 +115,13 @@ const Articles = ({ isGlobal }) => {
                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grand Slam Offer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
                 </div>
                 <div className="text-sm font-bold text-brand-600 dark:text-brand-400 mb-3 flex items-center gap-2 uppercase tracking-wider">
-                   Strategy <span className="w-1 h-1 rounded-full bg-brand-400"></span> March 20
+                   {isGlobal ? "Market Entry" : "Strategy"} <span className="w-1 h-1 rounded-full bg-brand-400"></span> March 20
                 </div>
                 <h4 className="text-2xl font-bold mb-4 text-brand-950 dark:text-white leading-tight group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
-                  The Snowfall "Grand Slam" Guide
+                  {isGlobal ? "The Hyper-Localization Playbook" : "The Snowfall \"Grand Slam\" Guide"}
                 </h4>
-                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">
-                  Why competing on price in India is a death sentence, and how exclusivity and risk-reversal can hyper-propel your brand...
+                <p className="text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-6">  
+                  {isGlobal ? "Why bringing your exact foreign product model to India usually fails, and how to successfully adapt without losing your brand identity..." : "Why competing on price in India is a death sentence, and how exclusivity and risk-reversal can hyper-propel your brand..."}
                 </p>
               </div>
               <Link to="#" className="inline-flex items-center text-brand-950 dark:text-white font-bold group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
