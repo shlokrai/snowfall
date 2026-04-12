@@ -34,28 +34,46 @@ const AboutUs = ({ isGlobal }) => {
             <div className="w-16 h-16 bg-brand-800 dark:bg-brand-900 rounded-2xl flex flex-col justify-center items-center mb-8 border border-brand-600/30 relative z-10">
               <Shield size={32} className="text-brand-400" />
             </div>
-            <h2 className="text-3xl font-black mb-4 text-white relative z-10">The Founder's Commitments</h2>
+            <h2 className="text-3xl font-black mb-4 text-white relative z-10">
+              {isGlobal ? "The Expansion Guarantees" : "The Founder's Commitments"}
+            </h2>
             <ul className="text-brand-200/90 space-y-6 font-light text-lg relative z-10">
               <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
-                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/> 
-                  <strong className="text-white font-semibold leading-tight mt-0.5">Audit-Ready Books:</strong>
-                </div> 
-                <span className="flex-1">Flawless investor-ready books, maintained with absolute precision.</span>
+                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
+                  <strong className="text-white font-semibold leading-tight mt-0.5">
+                    {isGlobal ? "Worry-Free Setup:" : "Audit-Ready Books:"}
+                  </strong>
+                </div>
+                <span className="flex-1">
+                  {isGlobal 
+                    ? "Seamless legal entity incorporation and localized banking structure setup from day one."
+                    : "Flawless investor-ready books, maintained with absolute precision."}
+                </span>
               </li>
               <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
-                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/> 
-                  <strong className="text-white font-semibold leading-tight mt-0.5">Definitive Clarity:</strong>
-                </div> 
-                <span className="flex-1">Clear, actionable legal and tax answers without the ambiguity.</span>
+                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
+                  <strong className="text-white font-semibold leading-tight mt-0.5">
+                    {isGlobal ? "Cross-Border Clarity:" : "Definitive Clarity:"}
+                  </strong>
+                </div>
+                <span className="flex-1">
+                  {isGlobal
+                    ? "Actionable, legally sound pathways for international tax, repatriation, and FEMA compliance."
+                    : "Clear, actionable legal and tax answers without the ambiguity."}
+                </span>
               </li>
               <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
-                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/> 
+                  <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
                   <strong className="text-white font-semibold leading-tight mt-0.5">Exclusivity:</strong>
-                </div> 
-                <span className="flex-1">A vetted, high-quality network built on trust and synergistic growth.</span>
+                </div>
+                <span className="flex-1">
+                  {isGlobal
+                    ? "Instant access to a vetted, high-quality network of reliable local partners and enterprise clients."
+                    : "A vetted, high-quality network built on trust and synergistic growth."}
+                </span>
               </li>
             </ul>
           </div>
