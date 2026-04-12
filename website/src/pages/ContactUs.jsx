@@ -30,9 +30,11 @@ const ContactUs = ({ isGlobal }) => {
     <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-40 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50" id="contact">
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl lg:text-6xl font-black text-brand-950 dark:text-white tracking-tighter">Let's Talk Growth</h1>
+          <h1 className="text-5xl lg:text-6xl font-black text-brand-950 dark:text-white tracking-tighter">
+            {isGlobal ? "Enter India With Precision" : "Let's Talk Growth"}
+          </h1>
           <p className="mt-6 text-xl text-brand-800/80 dark:text-brand-200/80 max-w-2xl mx-auto font-light leading-relaxed">
-            Ready to scale your business? Reach out to our team of experts and let's get started on your grand slam offer.
+            {isGlobal ? "Ready to expand into the world's fastest-growing enterprise market? Connect with our cross-border advisory team to engineer your flawless entry strategy." : "Ready to scale your business? Reach out to our team of experts and let's get started on your grand slam offer."}
           </p>
         </div>
 
