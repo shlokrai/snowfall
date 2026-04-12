@@ -48,10 +48,10 @@ export default {
           '100%': { transform: 'translateY(110px) translateX(-15px)', opacity: '0' },
         },
         currencyFall: {
-          '0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '0' },
-          '10%': { opacity: '1' },
-          '90%': { opacity: '1' },
-          '100%': { transform: 'translateY(110vh) rotate(360deg)', opacity: '0' },
+          '0%': { transform: 'translateY(-10vh) translateX(-10px) rotate(-15deg)', opacity: '0' },
+          '20%': { opacity: '1' },
+          '80%': { opacity: '1' },
+          '100%': { transform: 'translateY(110vh) translateX(20px) rotate(15deg)', opacity: '0' },
         }
       }
     },

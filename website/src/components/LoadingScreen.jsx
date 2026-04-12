@@ -6,14 +6,15 @@ const LoadingScreen = ({ transitionState }) => {
   const [fallingItems, setFallingItems] = useState([]);
 
   useEffect(() => {
-    const items = Array.from({ length: 45 }).map((_, i) => ({
+    const items = Array.from({ length: 30 }).map((_, i) => ({
       id: i,
       symbol: currencies[Math.floor(Math.random() * currencies.length)],
-      left: `${Math.random() * 100}%`,
-      animationDuration: `${Math.random() * 2 + 1.5}s`,
-      animationDelay: `${Math.random() * 1}s`,
-      opacity: Math.random() * 0.4 + 0.2,
-      size: `${Math.random() * 1.5 + 1.5}rem`
+      left: `${(Math.random() * 100).toFixed(2)}%`,
+      animationDuration: `${Math.random() * 4 + 3.5}s`,
+      animationDelay: `${Math.random() * 2}s`,
+      opacity: (Math.random() * 0.15 + 0.05).toFixed(2),
+      size: `${(Math.random() * 1.5 + 1).toFixed(2)}rem`,
+      blur: Math.random() > 0.5 ? 'blur(2px)' : 'none'
     }));
     setFallingItems(items);
   }, []);
@@ -28,13 +29,14 @@ const LoadingScreen = ({ transitionState }) => {
         {fallingItems.map((item) => (
           <div
             key={item.id}
-            className="absolute animate-currency-fall font-black flex items-center justify-center"
+            className="absolute animate-currency-fall font-light flex items-center justify-center select-none"
             style={{
-              color: isToGlobal ? 'rgba(241, 246, 249, 0.7)' : 'rgba(142, 195, 176, 0.7)',
+              color: isToGlobal ? 'rgba(241, 246, 249, 0.8)' : 'rgba(142, 195, 176, 0.8)',
               left: item.left,
               top: '-10vh',
               fontSize: item.size,
               opacity: item.opacity,
+              filter: item.blur,
               animationDuration: item.animationDuration,
               animationDelay: item.animationDelay,
               animationIterationCount: 'infinite'

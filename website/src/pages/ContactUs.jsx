@@ -65,7 +65,7 @@ const ContactUs = ({ isGlobal }) => {
                   <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-brand-600 transition-all min-w-[50px] flex justify-center">
                     <MapPin className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
-                  <span className="text-lg group-hover:text-brand-200 transition-colors">33 C R AVENUE, 9TH FLOOR SUITE NO.912<br/><span className="text-base text-brand-400/60 font-light mt-1 block">KOLKATA, West Bengal, India - 700012</span></span>
+                  <span className="text-lg font-medium group-hover:text-brand-200 transition-colors">33 C.R. Avenue, 9th Floor, <br/>Suite No. 912<br/><span className="text-base text-brand-400/80 font-normal mt-1 block">Kolkata, West Bengal, India - 700012</span></span>
                 </div>
               </div>
             </div>
