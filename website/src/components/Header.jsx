@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun, IndianRupee } from 'lucide-react';
 import globalIcon from '../assets/global-icon.png';
 
-const Header = () => {
+const Header = ({ toggleSnowfall }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
   });
@@ -40,7 +40,7 @@ const Header = () => {
         
         {/* Left Side: Logo via Link */}
         <div className="pointer-events-auto">
-          <Link to={isGlobal ? "/global" : "/"} className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
+          <Link to={isGlobal ? "/global" : "/"} onClick={toggleSnowfall} className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
             <svg
               className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"

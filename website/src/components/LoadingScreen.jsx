@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 
-const currencies = ['$', '€', '£', '₹', '¥', '₽', '₩'];
+const globalCurrencies = ['$', '€', '£', '¥', '₽', '₩'];
 
 const LoadingScreen = ({ transitionState }) => {
   const [fallingItems, setFallingItems] = useState([]);
 
+  const isToGlobal = transitionState === 'to-global';
+
   useEffect(() => {
+    const activeCurrencies = isToGlobal ? globalCurrencies : ['₹'];
+    
     const items = Array.from({ length: 30 }).map((_, i) => ({
       id: i,
-      symbol: currencies[Math.floor(Math.random() * currencies.length)],
+      symbol: activeCurrencies[Math.floor(Math.random() * activeCurrencies.length)],
       left: `${(Math.random() * 100).toFixed(2)}%`,
       animationDuration: `${Math.random() * 4 + 3.5}s`,
       animationDelay: `${Math.random() * 2}s`,
@@ -17,9 +21,7 @@ const LoadingScreen = ({ transitionState }) => {
       blur: Math.random() > 0.5 ? 'blur(2px)' : 'none'
     }));
     setFallingItems(items);
-  }, []);
-
-  const isToGlobal = transitionState === 'to-global';
+  }, [isToGlobal]);
 
   return (
     <div className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-colors duration-[2500ms] ease-in-out ${isToGlobal ? 'bg-[#212a3e] text-[#f1f6f9]' : 'bg-[#def5e5] text-[#233F35]'}`}>

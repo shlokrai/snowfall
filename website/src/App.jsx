@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
+import GlobalSnowfall from './components/GlobalSnowfall';
 import Home from './pages/Home';
 import GlobalHome from './pages/GlobalHome';
 import ContactUs from './pages/ContactUs';
@@ -15,6 +16,7 @@ function AppContent() {
   const isGlobal = location.pathname.includes('/global');
   
   const [isLoading, setIsLoading] = useState(false);
+  const [isSnowingGlobally, setIsSnowingGlobally] = useState(false);
   const [transitionState, setTransitionState] = useState('');
   const prevIsGlobal = useRef(isGlobal);
 
@@ -35,8 +37,9 @@ function AppContent() {
 
   return (
     <div className={`flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900 ${isGlobal ? 'global-theme' : ''}`}>
+      {isSnowingGlobally && <GlobalSnowfall />}
       {isLoading && <LoadingScreen transitionState={transitionState} />}
-      <Header />
+      <Header toggleSnowfall={() => setIsSnowingGlobally(!isSnowingGlobally)} />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
