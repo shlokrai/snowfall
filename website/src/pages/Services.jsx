@@ -2,7 +2,7 @@
 import { Shield, TrendingUp, Users, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Services = () => {
+const Services = ({ isGlobal }) => {
   return (
     <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-32 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50">
 
@@ -15,7 +15,9 @@ const Services = () => {
           Our Core <span className="text-brand-600 dark:text-brand-400">Pillars</span>
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
-          We don't just offer services; we provide an exclusive B2B growth ecosystem combining elite compliance, capital raising, and active network synergies.
+          {isGlobal
+            ? "We don't just offer services; we orchestrate a complete cross-border entry strategy seamlessly uniting compliance, legal structuring, and local market synergy."
+            : "We don't just offer services; we provide an exclusive B2B growth ecosystem combining elite compliance, capital raising, and active network synergies."}
         </p>
       </section>
 

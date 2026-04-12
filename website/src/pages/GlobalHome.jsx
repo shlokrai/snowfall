@@ -127,10 +127,10 @@ const GlobalHome = () => {
           {/* Span Bottom Banner */}
           <div className="md:col-span-2 bg-brand-400 dark:bg-brand-800 border-2 border-brand-200 dark:border-brand-700 p-10 rounded-[2.5rem] flex items-center justify-between overflow-hidden relative hover:shadow-2xl hover:shadow-brand-400/20 transition-all duration-500 cursor-default group">
             <div className="relative z-10">
-              <h3 className="text-3xl font-black mb-2 tracking-tight text-brand-950 dark:text-white group-hover:translate-x-2 transition-transform duration-500">The "Global Expansion" Guarantee</h3>
+              <h3 className="text-3xl font-black mb-2 tracking-tight text-brand-950 dark:text-white group-hover:translate-x-2 transition-transform duration-500">The "Global Expansion" Commitment</h3>
               <ul className="text-brand-950 dark:text-brand-50 font-bold space-y-2 mt-6">
-                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-75"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> 100% Worry-Free Entity Setup</li>
-                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-150"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> Definitive Cross-Border Tax Strategy</li>
+                <li className="flex items-start gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-75"><CheckCircle2 className="text-brand-950 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">100% Worry-Free Entity Setup</span></li>
+                <li className="flex items-start gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-150"><CheckCircle2 className="text-brand-950 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Definitive Cross-Border Tax Strategy</span></li>
               </ul>
             </div>
             <div className="absolute right-0 -bottom-10 opacity-30 text-brand-950 dark:text-brand-900 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-700">
