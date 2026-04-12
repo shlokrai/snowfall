@@ -48,7 +48,7 @@ const Home = () => {
           </div>
           <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
-             <p className="text-brand-800 dark:text-brand-200 font-medium">Verified CAs & CSs</p>
+             <p className="text-brand-800 dark:text-brand-200 font-medium">Certified Professionals</p>
           </div>
           <div className="bg-brand-200 dark:bg-brand-800 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-center items-center aspect-square flex-col text-center hover:scale-[1.02] hover:bg-brand-400 dark:hover:bg-brand-600 hover:shadow-xl transition-all cursor-default relative overflow-hidden group">
              <div className="w-16 h-16 rounded-full bg-brand-50 dark:bg-brand-900 shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
@@ -91,7 +91,7 @@ const Home = () => {
               <div>
                 <h3 className="text-4xl font-black mb-4 tracking-tight text-white group-hover:text-brand-200 transition-colors">Advisory & Compliance</h3>
                 <p className="text-brand-50/80 text-xl font-light max-w-lg leading-relaxed group-hover:text-brand-50 transition-colors">
-                  Bulletproof your business. From complex tax structuring to monthly bookkeeping, our elite network of CAs and Advocates keeps your foundation rock solid.
+                  Bulletproof your business. From complex tax structuring to monthly bookkeeping, our elite network of certified professionals keeps your foundation rock solid.
                 </p>
               </div>
             </div>
