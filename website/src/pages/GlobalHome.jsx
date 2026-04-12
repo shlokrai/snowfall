@@ -51,12 +51,12 @@ const GlobalHome = () => {
              <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Certified Professionals</p>
           </div>
-          <div className="bg-brand-200 dark:bg-brand-800 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-center items-center aspect-square flex-col text-center hover:scale-[1.02] hover:bg-brand-400 dark:hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:shadow-xl transition-all cursor-default relative overflow-hidden group">
+          <Link to="/global/contact" className="bg-brand-200 dark:bg-brand-800 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-center items-center aspect-square flex-col text-center hover:scale-[1.02] hover:bg-brand-400 dark:hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:shadow-xl transition-all cursor-pointer relative overflow-hidden group">
              <div className="w-16 h-16 rounded-full bg-brand-50 dark:bg-brand-900 shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                <ArrowUpRight size={28} className="text-brand-950 dark:text-brand-50" />
              </div>
              <p className="font-semibold text-brand-950 dark:text-brand-50">Join the Network</p>
-          </div>
+          </Link>
         </div>
       </section>
 
