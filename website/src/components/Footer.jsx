@@ -9,14 +9,31 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-6 group cursor-default">
                <svg
-                  className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-400"
+                  className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-400 relative overflow-visible"
                   viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
                   <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="2" className="fill-brand-900/50" />
+                  
+                  <g clipPath="url(#snow-clip-footer)">
+                    <circle cx="35" cy="-10" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
+                    <circle cx="55" cy="-15" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
+                    <circle cx="70" cy="-5" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
+                    <circle cx="45" cy="-20" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-4" />
+                    <circle cx="50" cy="-25" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
+                    <circle cx="30" cy="-12" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
+                    <circle cx="80" cy="-18" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
+                  </g>
+
                   <path d="M15 65 L50 25 L85 65" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300" />
                   <path d="M30 65 L50 40 L70 65" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-0.5 transition-transform duration-300" />
                   <path d="M22 55 Q35 45 50 60 T78 50" stroke="currentColor" strokeWidth="2" fill="none" />
+                  
+                  <defs>
+                    <clipPath id="snow-clip-footer">
+                      <circle cx="50" cy="50" r="38" />
+                    </clipPath>
+                  </defs>
                 </svg>
                 <span className="text-4xl font-black tracking-tighter text-white">
                   Snowfall <span className="text-brand-400">Advisory</span>

@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
+import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
+import Articles from './pages/Articles';
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/articles" element={<Articles />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </main>

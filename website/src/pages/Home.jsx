@@ -139,6 +139,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Testimonial Placeholder */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto animate-fade-in-up" id="testimonials">
+        <div className="bg-brand-950 dark:bg-brand-900 border-2 border-transparent p-12 lg:p-16 rounded-[3rem] text-center relative overflow-hidden group hover:shadow-2xl transition-all duration-500 cursor-default">
+           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-50"></div>
+           <svg className="w-12 h-12 mx-auto mb-8 text-brand-600 dark:text-brand-400 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+             <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+           </svg>
+           <p className="text-2xl lg:text-4xl font-light text-white mb-10 leading-relaxed italic">
+             "Working with this team changed the trajectory of our business. The strategic insight and execution speed are unmatched. Highly recommended!"
+           </p>
+           <div>
+             <h4 className="text-xl font-bold text-brand-200">Client Name Placeholder</h4>
+             <p className="text-brand-400/80 font-medium">CEO, StartupInc</p>
+           </div>
+        </div>
+      </section>
+
       {/* Massive Bold Footer CTA */}
       <section className="py-32 bg-brand-200 dark:bg-brand-900 text-brand-950 dark:text-white rounded-t-[3rem] mt-20 relative overflow-hidden group transition-colors duration-500">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/40 dark:from-brand-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-duration-1000"></div>

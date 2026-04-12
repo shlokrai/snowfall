@@ -22,6 +22,10 @@ export default {
         marquee: 'marquee 25s linear infinite',
         'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
         'wiggle': 'wiggle 1s ease-in-out infinite',
+        'snow-1': 'snowFall 2s linear infinite',
+        'snow-2': 'snowFall 2.5s linear infinite 0.5s',
+        'snow-3': 'snowFall 2.2s linear infinite 1.2s',
+        'snow-4': 'snowFall 3s linear infinite 0.8s',
       },
       keyframes: {
         marquee: {
@@ -35,6 +39,12 @@ export default {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-3deg)' },
           '50%': { transform: 'rotate(3deg)' },
+        },
+        snowFall: {
+          '0%': { transform: 'translateY(-10px) translateX(0)', opacity: '0' },
+          '20%': { opacity: '1' },
+          '80%': { opacity: '1' },
+          '100%': { transform: 'translateY(110px) translateX(-15px)', opacity: '0' },
         }
       }
     },

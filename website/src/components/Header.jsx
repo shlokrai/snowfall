@@ -23,25 +23,43 @@ const Header = () => {
         <div className="pointer-events-auto">
           <Link to="/" className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
             <svg
-              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400"
+              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
               <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="2" className="fill-brand-50/50 dark:fill-brand-900/50" />
+              
+              <g clipPath="url(#snow-clip)">
+                <circle cx="35" cy="-10" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
+                <circle cx="55" cy="-15" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
+                <circle cx="70" cy="-5" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
+                <circle cx="45" cy="-20" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-4" />
+                <circle cx="50" cy="-25" r="2" fill="currentColor" className="opacity-0 group-hover:animate-snow-1" />
+                <circle cx="30" cy="-12" r="1.5" fill="currentColor" className="opacity-0 group-hover:animate-snow-3" />
+                <circle cx="80" cy="-18" r="1" fill="currentColor" className="opacity-0 group-hover:animate-snow-2" />
+              </g>
+
               <path d="M15 65 L50 25 L85 65" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300" />
               <path d="M30 65 L50 40 L70 65" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-0.5 transition-transform duration-300" />
               <path d="M22 55 Q35 45 50 60 T78 50" stroke="currentColor" strokeWidth="2" fill="none" />
+              
+              <defs>
+                <clipPath id="snow-clip">
+                  <circle cx="50" cy="50" r="38" />
+                </clipPath>
+              </defs>
             </svg>
             <span>Snowfall <span className="text-brand-600 dark:text-brand-400">Advisory</span></span>
           </Link>
         </div>
 
         {/* Middle: Floating Pill Navigation */}
-        <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-2 py-1.5 flex space-x-1 shadow-sm transition-all hover:shadow-md">
-          <Link to="/" className="text-brand-900/90 hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2 text-sm font-semibold transition-all">Home</Link>
-          <a href="#growth" className="text-brand-900/90 hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2 text-sm font-semibold transition-all">Pillars</a>
-          <a href="#network" className="text-brand-900/90 hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2 text-sm font-semibold transition-all">Network</a>
-          <Link to="/contact" className="text-brand-900/90 hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2 text-sm font-semibold transition-all hidden lg:block">Contact</Link>
+        <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-2 py-1.5 flex space-x-1 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
+          <Link to="/" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all">Home</Link>
+          <Link to="/about" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">About</Link>
+          <Link to="/services" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">Services</Link>
+          <Link to="/articles" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">Articles</Link>
+          <Link to="/contact" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden lg:block">Contact</Link>
         </nav>
 
         {/* Right Side: Theme Toggle & Actions */}
