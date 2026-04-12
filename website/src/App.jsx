@@ -13,20 +13,9 @@ import Articles from './pages/Articles';
 function AppContent() {
   const location = useLocation();
   const isGlobal = location.pathname.includes('/global');
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 600); // Snowfall loading screen duration setup for 600ms
-
-    return () => clearTimeout(timer);
-  }, [location.pathname]);
 
   return (
     <div className={`flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900 ${isGlobal ? 'global-theme' : ''}`}>
-      {isLoading && <LoadingScreen />}
       <Header />
       <main className="flex-grow">
         <Routes>
