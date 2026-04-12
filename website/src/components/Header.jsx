@@ -21,9 +21,9 @@ const Header = () => {
         
         {/* Left Side: Logo via Link */}
         <div className="pointer-events-auto">
-          <Link to="/" className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
+          <Link to="/" className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
             <svg
-              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
+              className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
@@ -54,26 +54,26 @@ const Header = () => {
         </div>
 
         {/* Middle: Floating Pill Navigation */}
-        <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-2 py-1.5 flex space-x-1 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
-          <Link to="/" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all">Home</Link>
-          <Link to="/about" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">About</Link>
-          <Link to="/services" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">Services</Link>
-          <Link to="/articles" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden sm:block">Articles</Link>
-          <Link to="/contact" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-4 py-2 text-sm font-semibold transition-all hidden lg:block">Contact</Link>
+        <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-3 py-2 flex space-x-2 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
+          <Link to="/" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all">Home</Link>
+          <Link to="/about" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">About</Link>
+          <Link to="/services" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Services</Link>
+          <Link to="/articles" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Articles</Link>
+          <Link to="/contact" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden lg:block">Contact</Link>
         </nav>
 
         {/* Right Side: Theme Toggle & Actions */}
-        <div className="flex items-center space-x-3 pointer-events-auto">
+        <div className="flex items-center space-x-4 pointer-events-auto">
           {/* Theme Switcher */}
           <button 
             onClick={toggleTheme} 
-            className="p-2.5 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
+            className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle dark mode"
           >
-            {isDarkMode ? <Sun size={18} strokeWidth={2.5} /> : <Moon size={18} strokeWidth={2.5} />}
+            {isDarkMode ? <Sun size={20} strokeWidth={2.5} /> : <Moon size={20} strokeWidth={2.5} />}
           </button>
           
-          <Link to="/contact" className="px-6 py-2.5 rounded-full bg-brand-900 text-white font-bold text-sm hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
+          <Link to="/contact" className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
             Book Call
           </Link>
         </div>
