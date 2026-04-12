@@ -34,7 +34,7 @@ const Header = () => {
         
         {/* Left Side: Logo via Link */}
         <div className="pointer-events-auto">
-          <Link to="/" className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
+          <Link to={isGlobal ? "/global" : "/"} className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
             <svg
               className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Header = () => {
 
         {/* Middle: Floating Pill Navigation */}
         <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-3 py-2 flex space-x-2 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
-          <Link to="/" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all">Home</Link>
+          <Link to={isGlobal ? "/global" : "/"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all">Home</Link>
           <Link to="/about" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">About</Link>
           <Link to="/services" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Services</Link>
           <Link to="/articles" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Articles</Link>
