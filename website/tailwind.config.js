@@ -26,6 +26,7 @@ export default {
         'snow-2': 'snowFall 2.5s linear infinite 0.5s',
         'snow-3': 'snowFall 2.2s linear infinite 1.2s',
         'snow-4': 'snowFall 3s linear infinite 0.8s',
+        'currency-fall': 'currencyFall linear infinite forwards',
       },
       keyframes: {
         marquee: {
@@ -45,6 +46,12 @@ export default {
           '20%': { opacity: '1' },
           '80%': { opacity: '1' },
           '100%': { transform: 'translateY(110px) translateX(-15px)', opacity: '0' },
+        },
+        currencyFall: {
+          '0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '0' },
+          '10%': { opacity: '1' },
+          '90%': { opacity: '1' },
+          '100%': { transform: 'translateY(110vh) rotate(360deg)', opacity: '0' },
         }
       }
     },
