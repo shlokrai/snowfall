@@ -4,7 +4,9 @@ import { Moon, Sun, IndianRupee } from 'lucide-react';
 import globalIcon from '../assets/global-icon.png';
 
 const Header = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark';
+  });
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -13,8 +15,10 @@ const Header = () => {
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
 
