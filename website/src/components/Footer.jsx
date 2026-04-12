@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+  const isGlobal = location.pathname.includes('/global');
+
   return (
     <footer className="bg-brand-900 dark:bg-brand-950 text-white py-16 border-t border-brand-800 transition-colors duration-500">
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +58,7 @@ const Footer = () => {
             <h3 className="text-sm font-bold text-brand-400 tracking-wider uppercase mb-6">Company</h3>
             <ul className="space-y-4">
               <li><a href="#about" className="text-brand-50 hover:text-brand-400 transition-colors font-medium">About Us</a></li>
-              <li><Link to="/contact" className="text-brand-400 hover:text-brand-200 font-bold transition-colors">Contact Us</Link></li>
+              <li><Link to={isGlobal ? "/global/contact" : "/contact"} className="text-brand-400 hover:text-brand-200 font-bold transition-colors">Contact Us</Link></li>
             </ul>
           </div>
         </div>

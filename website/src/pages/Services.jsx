@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   return (
     <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-32 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50">
-      
+
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center mb-20 animate-fade-in-up">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8">
           <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
@@ -20,7 +20,7 @@ const Services = () => {
       </section>
 
       <section className="px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto mb-20 space-y-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-        
+
         {/* Pillar 1: Advisory & Compliance */}
         <div className="bg-white dark:bg-brand-900 rounded-[2.5rem] p-10 md:p-16 flex flex-col lg:flex-row gap-12 group hover:shadow-2xl transition-all duration-500 border border-transparent hover:border-brand-200 dark:hover:border-brand-800">
            <div className="lg:w-1/3 flex items-start">
@@ -33,11 +33,11 @@ const Services = () => {
              <p className="text-xl text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-8">
                Bulletproof your business. Don't let ROC filings, unpredictable bookkeeping, and tax compliance steal hours from your revenue growth. Our elite network of CAs, CSs, CMAs, and Advocates keeps your foundation rock solid.
              </p>
-             <ul className="grid sm:grid-cols-2 gap-4 text-brand-950 dark:text-brand-200 font-medium">
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Complex Tax Structuring</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Flawless Monthly Bookkeeping</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Strict ROC & Legal Compliance</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Flawless Investor-Ready Books</li>
+             <ul className="grid md:grid-cols-2 gap-6 text-brand-950 dark:text-brand-200 font-medium pt-2">
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Complex Tax Structuring</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Flawless Monthly Bookkeeping</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Strict ROC & Legal Compliance</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Flawless Investor-Ready Books</span></li>
              </ul>
            </div>
         </div>
@@ -55,11 +55,11 @@ const Services = () => {
              <p className="text-xl text-brand-200/80 font-light leading-relaxed mb-8">
                Don't navigate the investment landscape blind. The exhausting hunt for capital requires precision. We prep your financials, build your data room, and connect you with the right capital required to scale exponentially.
              </p>
-             <ul className="grid sm:grid-cols-2 gap-4 text-brand-50 font-medium">
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> Financial Modeling & Projections</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> Comprehensive Data Room Creation</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> Pitch Deck Financial Vetting</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> Direct Capital Connections</li>
+             <ul className="grid md:grid-cols-2 gap-6 text-brand-50 font-medium pt-2">
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Financial Modeling & Projections</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Comprehensive Data Room Creation</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Pitch Deck Financial Vetting</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Direct Capital Connections</span></li>
              </ul>
            </div>
         </div>
@@ -76,14 +76,15 @@ const Services = () => {
              <p className="text-xl text-brand-800 dark:text-brand-200/80 font-light leading-relaxed mb-8">
                Grow with our clients. Gain exclusive access to our inner circle of partnered businesses. We actively facilitate synergistic partnerships to help your business unlock massive new native revenue streams.
              </p>
-             <ul className="grid sm:grid-cols-2 gap-4 text-brand-950 dark:text-brand-200 font-medium tracking-tight">
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Highly Vetted Member Base</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Synergistic Strategic Partnerships</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Closed-Door Networking Events</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Exclusive Founder Access</li>
+             <ul className="grid md:grid-cols-2 gap-6 text-brand-950 dark:text-brand-200 font-medium tracking-tight pt-2">
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Highly Vetted Member Base</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Synergistic Strategic Partnerships</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Closed-Door Networking Events</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Exclusive Founder Access</span></li>
              </ul>
            </div>
         </div>
+
       </section>
 
       {/* CTA section inside Services */}

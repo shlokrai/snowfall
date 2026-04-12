@@ -71,10 +71,10 @@ const Header = () => {
         {/* Middle: Floating Pill Navigation */}
         <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-3 py-2 flex space-x-2 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
           <Link to={isGlobal ? "/global" : "/"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all">Home</Link>
-          <Link to="/about" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">About</Link>
-          <Link to="/services" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Services</Link>
-          <Link to="/articles" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Articles</Link>
-          <Link to="/contact" className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden lg:block">Contact</Link>
+          <Link to={isGlobal ? "/global/about" : "/about"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">About</Link>
+          <Link to={isGlobal ? "/global/services" : "/services"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Services</Link>
+          <Link to={isGlobal ? "/global/articles" : "/articles"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Articles</Link>
+          <Link to={isGlobal ? "/global/contact" : "/contact"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden lg:block">Contact</Link>
         </nav>
 
         {/* Right Side: Theme Toggle & Actions */}
@@ -101,15 +101,15 @@ const Header = () => {
           </button>
 
           {/* Theme Switcher */}
-          <button 
-            onClick={toggleTheme} 
+          <button
+            onClick={toggleTheme}
             className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? <Sun size={20} strokeWidth={2.5} /> : <Moon size={20} strokeWidth={2.5} />}
           </button>
-          
-          <Link to="/contact" className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
+
+          <Link to={isGlobal ? "/global/contact" : "/contact"} className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
             Book Call
           </Link>
         </div>

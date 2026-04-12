@@ -35,10 +35,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  p {
+
+  /* Utility classes for justified text when specifically needed */
+  .text-justify-hyphen {
     text-align: justify;
-    /* Adding hyphens helps prevent the "rivers of whitespace" unevenness in justified text */
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;

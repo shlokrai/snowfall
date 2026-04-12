@@ -20,10 +20,19 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/global" element={<GlobalHome />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/contact" element={<ContactUs />} />
+          
+          {/* Shared Pages with isGlobal prop */}
+          <Route path="/about" element={<AboutUs isGlobal={false} />} />
+          <Route path="/global/about" element={<AboutUs isGlobal={true} />} />
+          
+          <Route path="/services" element={<Services isGlobal={false} />} />
+          <Route path="/global/services" element={<Services isGlobal={true} />} />
+          
+          <Route path="/articles" element={<Articles isGlobal={false} />} />
+          <Route path="/global/articles" element={<Articles isGlobal={true} />} />
+          
+          <Route path="/contact" element={<ContactUs isGlobal={false} />} />
+          <Route path="/global/contact" element={<ContactUs isGlobal={true} />} />
         </Routes>
       </main>
       <Footer />

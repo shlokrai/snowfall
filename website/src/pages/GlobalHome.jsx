@@ -25,7 +25,7 @@ const GlobalHome = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link to="/contact" className="group inline-flex items-center justify-between px-8 py-5 rounded-full text-lg font-medium text-brand-950 dark:text-brand-950 bg-brand-200 dark:bg-brand-400 hover:bg-brand-400 dark:hover:bg-brand-200 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 sm:w-80">
+            <Link to="/global/contact" className="group inline-flex items-center justify-between px-8 py-5 rounded-full text-lg font-medium text-brand-950 dark:text-brand-950 bg-brand-200 dark:bg-brand-400 hover:bg-brand-400 dark:hover:bg-brand-200 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 sm:w-80">
               <span>Start Growing</span>
               <div className="bg-brand-950/10 p-2 rounded-full group-hover:rotate-45 transition-transform">
                 <ArrowUpRight size={20} className="text-brand-950" />
@@ -167,7 +167,7 @@ const GlobalHome = () => {
           <p className="text-xl text-brand-800 dark:text-brand-200 mb-12 font-medium max-w-2xl leading-relaxed">
             Book a strategic growth session with us. Find out exactly how we can support your business's seamless entry and rapid scaling in India.
           </p>
-          <Link to="/contact" className="group/btn inline-flex items-center space-x-4 bg-brand-950 dark:bg-brand-400 text-brand-50 dark:text-brand-950 px-10 py-6 rounded-full hover:scale-105 hover:bg-brand-600 dark:hover:bg-brand-600 hover:text-brand-950 hover:shadow-2xl hover:shadow-brand-950/20 transition-all shadow-xl">
+          <Link to="/global/contact" className="group/btn inline-flex items-center space-x-4 bg-brand-950 dark:bg-brand-400 text-brand-50 dark:text-brand-950 px-10 py-6 rounded-full hover:scale-105 hover:bg-brand-600 dark:hover:bg-brand-600 hover:text-brand-950 hover:shadow-2xl hover:shadow-brand-950/20 transition-all shadow-xl">
             <span className="text-xl font-bold">Book Growth Session</span>
             <div className="bg-brand-50/20 dark:bg-brand-950/10 p-2 rounded-full group-hover/btn:bg-white group-hover/btn:text-brand-950 transition-colors">
               <ArrowUpRight size={24} className="group-hover/btn:rotate-45 transition-transform" />
