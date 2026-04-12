@@ -122,14 +122,29 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
           </button>
 
           {/* Theme Switcher */}
-          <button
-            onClick={toggleTheme}
-            className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
-            aria-label="Toggle dark mode"
-          >
-            {isDarkMode ? <Sun size={20} strokeWidth={2.5} /> : <Moon size={20} strokeWidth={2.5} />}
-            
-            {/* Custom Tooltip */}
+            <button
+              onClick={toggleTheme}
+              className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 dark:text-brand-50 hover:bg-brand-50 dark:hover:bg-brand-800 transition-colors shadow-sm flex items-center justify-center hover:scale-110 overflow-hidden"
+              aria-label="Toggle dark mode"
+            >
+              <div className="relative w-5 h-5 flex items-center justify-center">
+                <Sun 
+                  size={20} strokeWidth={2.5} 
+                  className={`absolute transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                    isDarkMode 
+                      ? 'rotate-0 scale-100 opacity-100 text-yellow-400' 
+                      : '-rotate-90 scale-50 opacity-0 text-transparent'
+                  }`} 
+                />
+                <Moon 
+                  size={20} strokeWidth={2.5} 
+                  className={`absolute transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                    isDarkMode 
+                      ? 'rotate-90 scale-50 opacity-0 text-transparent' 
+                      : 'rotate-0 scale-100 opacity-100'
+                  }`} 
+                />
+              </div>            {/* Custom Tooltip */}
             <span className="absolute top-14 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
               {isDarkMode ? "Light Mode" : "Dark Mode"}
             </span>
