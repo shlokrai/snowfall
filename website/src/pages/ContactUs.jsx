@@ -38,7 +38,7 @@ const ContactUs = () => {
 
         <div className="bg-white dark:bg-brand-900 rounded-[2.5rem] shadow-xl overflow-hidden md:flex border border-brand-200/50 dark:border-brand-800 transition-colors">
           {/* Contact Info Sidebar */}
-          <div className="bg-brand-950 dark:bg-brand-800 p-12 md:w-1/3 text-brand-50 flex flex-col justify-between relative overflow-hidden">
+          <div className="bg-brand-950 dark:bg-brand-800 p-8 lg:p-12 md:w-2/5 text-brand-50 flex flex-col justify-between relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-600 rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-black mb-8 tracking-tight text-white">Contact Info</h3>
@@ -57,7 +57,7 @@ const ContactUs = () => {
                   <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-brand-600 transition-all">
                     <Mail className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
-                  <span className="text-lg group-hover:text-brand-200 transition-colors break-all">admin.snowfall@gmail.com</span>
+                  <span className="text-lg group-hover:text-brand-200 transition-colors">admin.snowfall@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-5 group cursor-default">
                   <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-brand-600 transition-all min-w-[50px] flex justify-center">
@@ -77,7 +77,7 @@ const ContactUs = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="p-12 md:w-2/3 md:p-16">
+          <div className="p-8 md:w-3/5 lg:p-16 text-left">
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center space-y-6 py-20 animate-in fade-in zoom-in duration-500">
                 <div className="w-24 h-24 bg-brand-50 dark:bg-brand-800 rounded-full flex items-center justify-center border-4 border-brand-400">

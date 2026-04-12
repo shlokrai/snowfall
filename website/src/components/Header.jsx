@@ -23,8 +23,10 @@ const Header = () => {
   const toggleRegion = () => {
     if (isGlobal) {
       navigate('/');
+      window.scrollTo(0, 0);
     } else {
       navigate('/global');
+      window.scrollTo(0, 0);
     }
   };
 
