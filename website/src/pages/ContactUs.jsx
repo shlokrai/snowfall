@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, CheckCircle2 } from 'lucide-react';
 
-const ContactUs = () => {
+const ContactUs = ({ isGlobal }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

@@ -31,15 +31,19 @@ const Services = ({ isGlobal }) => {
              </div>
            </div>
            <div className="lg:w-2/3">
-             <h2 className="text-4xl font-black mb-4 text-brand-950 dark:text-white tracking-tighter group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">The Shield: Advisory & Compliance</h2>
+             <h2 className="text-4xl font-black mb-4 text-brand-950 dark:text-white tracking-tighter group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+               {isGlobal ? "The Shield: Cross-Border Compliance" : "The Shield: Advisory & Compliance"}
+             </h2>
              <p className="text-xl text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-8">
-               Bulletproof your business. Don't let ROC filings, unpredictable bookkeeping, and tax compliance steal hours from your revenue growth. Our elite network of CAs, CSs, CMAs, and Advocates keeps your foundation rock solid.
+               {isGlobal 
+                 ? "Bulletproof your entry. Don't let complex FEMA regulations, local tax compliance, and entity incorporation block your expansion. Our elite network of Indian legal and financial professionals keeps your foundation rock solid from day one."
+                 : "Bulletproof your business. Don't let ROC filings, unpredictable bookkeeping, and tax compliance steal hours from your revenue growth. Our elite network of CAs, CSs, CMAs, and Advocates keeps your foundation rock solid."}
              </p>
              <ul className="grid md:grid-cols-2 gap-6 text-brand-950 dark:text-brand-200 font-medium pt-2">
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Complex Tax Structuring</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Flawless Monthly Bookkeeping</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Strict ROC & Legal Compliance</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Flawless Investor-Ready Books</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "International Tax Structuring" : "Complex Tax Structuring"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "FEMA & RBI Compliance" : "Flawless Monthly Bookkeeping"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Entity Incorporation" : "Strict ROC & Legal Compliance"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Local Audit-Ready Setup" : "Flawless Investor-Ready Books"}</span></li>
              </ul>
            </div>
         </div>
@@ -53,15 +57,19 @@ const Services = ({ isGlobal }) => {
              </div>
            </div>
            <div className="lg:w-2/3 relative z-10">
-             <h2 className="text-4xl font-black mb-4 text-white tracking-tighter">The Fuel: Strategic Funding Raise</h2>
+             <h2 className="text-4xl font-black mb-4 text-white tracking-tighter">
+               {isGlobal ? "The Fuel: FDI & Capital Guide" : "The Fuel: Strategic Funding Raise"}
+             </h2>
              <p className="text-xl text-brand-200/80 font-light leading-relaxed mb-8">
-               Don't navigate the investment landscape blind. The exhausting hunt for capital requires precision. We prep your financials, build your data room, and connect you with the right capital required to scale exponentially.
+               {isGlobal 
+                 ? "Don't navigate the foreign investment landscape blind. Bridging cross-border capital requires local precision. We pave the way for smooth Foreign Direct Investment (FDI) capital inflows into your Indian sub-entities." 
+                 : "Don't navigate the investment landscape blind. The exhausting hunt for capital requires precision. We prep your financials, build your data room, and connect you with the right capital required to scale exponentially."}
              </p>
              <ul className="grid md:grid-cols-2 gap-6 text-brand-50 font-medium pt-2">
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Financial Modeling & Projections</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Comprehensive Data Room Creation</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Pitch Deck Financial Vetting</span></li>
-               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Direct Capital Connections</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "FDI Strategy & Approval" : "Financial Modeling & Projections"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "M&A Cross-Border Structuring" : "Comprehensive Data Room Creation"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Repatriation of Funds" : "Pitch Deck Financial Vetting"}</span></li>
+               <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Local Banking Negotiations" : "Direct Capital Connections"}</span></li>
              </ul>
            </div>
         </div>
@@ -74,15 +82,19 @@ const Services = ({ isGlobal }) => {
              </div>
            </div>
            <div className="lg:w-2/3">
-             <h2 className="text-4xl font-black mb-4 text-brand-950 dark:text-white tracking-tighter">The Catalyst: Snowfall B2B Network</h2>
+             <h2 className="text-4xl font-black mb-4 text-brand-950 dark:text-white tracking-tighter">
+               {isGlobal ? "The Catalyst: Local Indian Partnerships" : "The Catalyst: Snowfall B2B Network"}
+             </h2>
              <p className="text-xl text-brand-800 dark:text-brand-200/80 font-light leading-relaxed mb-8">
-               Grow with our clients. Gain exclusive access to our inner circle of partnered businesses. We actively facilitate synergistic partnerships to help your business unlock massive new native revenue streams.
+               {isGlobal
+                 ? "Grow without local guesswork. Gain immediate, exclusive access to our extensive inner circle of Indian enterprises. We proactively facilitate synergistic vendor and client partnerships to help your overseas business take root."
+                 : "Grow with our clients. Gain exclusive access to our inner circle of partnered businesses. We actively facilitate synergistic partnerships to help your business unlock massive new native revenue streams."}
              </p>
              <ul className="grid md:grid-cols-2 gap-6 text-brand-950 dark:text-brand-200 font-medium tracking-tight pt-2">
-                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Highly Vetted Member Base</span></li>
-                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Synergistic Strategic Partnerships</span></li>
-                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Closed-Door Networking Events</span></li>
-                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">Exclusive Founder Access</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Verified Implementation Partners" : "Highly Vetted Member Base"}</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Ready-to-Deploy Indian Talent" : "Synergistic Strategic Partnerships"}</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Enterprise Client Introductions" : "Closed-Door Networking Events"}</span></li>
+                 <li className="flex items-start gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400 shrink-0 mt-0.5" size={20}/> <span className="leading-tight">{isGlobal ? "Trust-Based Advisory Network" : "Exclusive Founder Access"}</span></li>
              </ul>
            </div>
         </div>
@@ -92,10 +104,10 @@ const Services = ({ isGlobal }) => {
       {/* CTA section inside Services */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center py-12">
         <h2 className="text-3xl lg:text-4xl font-black text-brand-950 dark:text-white tracking-tight mb-8">
-          Ready to equip your business with the right weapons?
+          {isGlobal ? "Ready to plant your footprint in the world's fastest-growing economy?" : "Ready to equip your business with the right weapons?"}
         </h2>
-        <Link to="/contact" className="inline-flex items-center justify-center space-x-3 px-8 py-5 rounded-full text-lg font-bold text-white bg-brand-950 dark:bg-brand-600 hover:bg-brand-600 dark:hover:bg-brand-400 dark:hover:text-brand-950 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-          <span>Apply for a Strategic Growth Session</span>
+        <Link to={isGlobal ? "/global/contact" : "/contact"} className="inline-flex items-center justify-center space-x-3 px-8 py-5 rounded-full text-lg font-bold text-white bg-brand-950 dark:bg-brand-600 hover:bg-brand-600 dark:hover:bg-brand-400 dark:hover:text-brand-950 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+          <span>{isGlobal ? "Apply for an Expansion Session" :"Apply for a Strategic Growth Session"}</span>
           <ArrowUpRight size={20} />
         </Link>
       </section>

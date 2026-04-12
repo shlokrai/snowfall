@@ -2,10 +2,10 @@
 import { ArrowRight, Calendar, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Articles = () => {
+const Articles = ({ isGlobal }) => {
   return (
     <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-32 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50">
-      
+
       {/* Header Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center mb-24 animate-fade-in-up">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8">
@@ -13,14 +13,12 @@ const Articles = () => {
           <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">Snowfall Intel</span>
         </div>
         <h1 className="text-5xl lg:text-7xl font-black text-brand-950 dark:text-white tracking-tighter mb-8 bg-clip-text">
-          Founder <span className="text-brand-600 dark:text-brand-400">Insights</span>
+          {isGlobal ? "Global " : "Founder "} <span className="text-brand-600 dark:text-brand-400">Insights</span>
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
-          Stay sharp. Dive into our latest strategies on capital raising, tax compliance, and leveraging B2B networks for explosive growth in India.
+          {isGlobal ? "Stay sharp. Dive into our latest strategies on foreign direct investment, cross-border compliance, and leveraging local networks for explosive entry into India." : "Stay sharp. Dive into our latest strategies on capital raising, tax compliance, and leveraging B2B networks for explosive growth in India."}
         </p>
-      </section>
-
-      {/* Featured Article */}
+      </section>      {/* Featured Article */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto mb-20 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
         <div className="bg-brand-950 dark:bg-brand-900 text-white rounded-[3rem] p-10 md:p-16 lg:p-24 relative overflow-hidden group hover:shadow-2xl transition-all duration-500">
           <div className="absolute top-0 right-0 w-96 h-96 bg-brand-600 rounded-full blur-[100px] opacity-30 -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-400 group-hover:scale-150 transition-all duration-1000"></div>
