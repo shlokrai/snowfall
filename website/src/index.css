@@ -16,13 +16,13 @@
   }
   
   .global-theme {
-    --color-brand-50: 253 244 245;
-    --color-brand-200: 169 184 223;
-    --color-brand-400: 139 157 206;
-    --color-brand-600: 111 129 193;
-    --color-brand-800: 65 77 131;
-    --color-brand-900: 41 49 102;
-    --color-brand-950: 24 29 61;
+    --color-brand-50: 241 246 249;
+    --color-brand-200: 198 205 219;
+    --color-brand-400: 155 164 181;
+    --color-brand-600: 106 118 142;
+    --color-brand-800: 57 72 103;
+    --color-brand-900: 33 42 62;
+    --color-brand-950: 17 22 34;
   }
 
   html {
