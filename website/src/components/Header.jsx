@@ -84,49 +84,56 @@ const Header = () => {
         {/* Right Side: Theme Toggle & Actions */}
         <div className="flex items-center space-x-4 pointer-events-auto">
           {/* Region Switcher */}
-          <button 
-            onClick={toggleRegion} 
-            title={isGlobal ? "Switch to Indian Vertical" : "Switch to Global Vertical"}
-            className="group p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
+          <button
+            onClick={toggleRegion}
+            className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle Regional Vertical"
           >
             {isGlobal ? (
               <IndianRupee size={20} className="stroke-[2.5]" />
             ) : (
-              <svg 
-                className="w-[22px] h-[22px] group-hover:rotate-180 transition-transform duration-[800ms] ease-in-out" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
+              <svg
+                className="w-[22px] h-[22px] group-hover:rotate-180 transition-transform duration-[800ms] ease-in-out"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               >
                 {/* Globe */}
                 <circle cx="12" cy="12" r="5.5" />
                 <path d="M12 6.5C10.5 6.5 9 8.5 9 12s1.5 5.5 3 5.5 3-2.5 3-5.5-1.5-5.5-3-5.5Z" />
                 <path d="M6.5 12h11" />
-                
+
                 {/* Sync Arrows wrapping it */}
                 <path d="M20.5 16A8.5 8.5 0 0 0 15 4V1" />
                 <path d="M15 4h3" />
-                
+
                 <path d="M3.5 8A8.5 8.5 0 0 0 9 20v3" />
                 <path d="M9 20H6" />
               </svg>
             )}
+            
+            {/* Custom Tooltip */}
+            <span className="absolute top-14 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
+              {isGlobal ? "Switch to Indian Vertical" : "Switch to Global Vertical"}
+            </span>
           </button>
 
           {/* Theme Switcher */}
           <button
             onClick={toggleTheme}
-            className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
+            className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? <Sun size={20} strokeWidth={2.5} /> : <Moon size={20} strokeWidth={2.5} />}
-          </button>
-
-          <Link to={isGlobal ? "/global/contact" : "/contact"} className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
+            
+            {/* Custom Tooltip */}
+            <span className="absolute top-14 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
+              {isDarkMode ? "Light Mode" : "Dark Mode"}
+            </span>
+          </button>          <Link to={isGlobal ? "/global/contact" : "/contact"} className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
             Book Call
           </Link>
         </div>
