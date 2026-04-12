@@ -57,13 +57,13 @@ const ContactUs = () => {
                   <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-brand-600 transition-all">
                     <Mail className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
-                  <span className="text-lg group-hover:text-brand-200 transition-colors">hello@snowfalladvisory.in</span>
+                  <span className="text-lg group-hover:text-brand-200 transition-colors break-all">admin.snowfall@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-5 group cursor-default">
-                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-brand-600 transition-all">
+                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-brand-600 transition-all min-w-[50px] flex justify-center">
                     <MapPin className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
-                  <span className="text-lg group-hover:text-brand-200 transition-colors">New Delhi, India<br/><span className="text-base text-brand-400/60 font-light mt-1 block">Placeholder Address XYZ,</span></span>
+                  <span className="text-lg group-hover:text-brand-200 transition-colors">33 C R AVENUE, 9TH FLOOR SUITE NO.912<br/><span className="text-base text-brand-400/60 font-light mt-1 block">KOLKATA, West Bengal, India - 700012</span></span>
                 </div>
               </div>
             </div>

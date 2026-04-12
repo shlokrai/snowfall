@@ -6,4 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+  p, li, span {
+    text-align: justify;
+  }
 }

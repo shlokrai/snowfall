@@ -32,11 +32,11 @@ const AboutUs = () => {
             <div className="w-16 h-16 bg-brand-800 dark:bg-brand-900 rounded-2xl flex flex-col justify-center items-center mb-8 border border-brand-600/30 relative z-10">
               <Shield size={32} className="text-brand-400" />
             </div>
-            <h2 className="text-3xl font-black mb-4 text-white relative z-10">The Founder's Guarantees</h2>
+            <h2 className="text-3xl font-black mb-4 text-white relative z-10">The Founder's Commitments</h2>
             <ul className="text-brand-200/90 space-y-4 font-light text-lg relative z-10">
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> <strong className="text-white font-semibold">Audit-Ready Books:</strong> 100% investor-ready books, corrected on our dime if flawed.</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> <strong className="text-white font-semibold">24-Hour Clarity:</strong> Definitive legal or tax answers within 24 hours, guaranteed.</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-400" size={20}/> <strong className="text-white font-semibold">Exclusivity:</strong> A vetted, high-quality network built on trust and synergistic growth.</li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3"><div className="flex items-center gap-3"><CheckCircle2 className="text-brand-400 shrink-0" size={20}/> <strong className="text-white font-semibold">Audit-Ready Books:</strong></div> <span>Flawless investor-ready books, maintained with absolute precision.</span></li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3"><div className="flex items-center gap-3"><CheckCircle2 className="text-brand-400 shrink-0" size={20}/> <strong className="text-white font-semibold">Definitive Clarity:</strong></div> <span>Clear, actionable legal and tax answers without the ambiguity.</span></li>
+              <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3"><div className="flex items-center gap-3"><CheckCircle2 className="text-brand-400 shrink-0" size={20}/> <strong className="text-white font-semibold">Exclusivity:</strong></div> <span>A vetted, high-quality network built on trust and synergistic growth.</span></li>
             </ul>
           </div>
         </div>

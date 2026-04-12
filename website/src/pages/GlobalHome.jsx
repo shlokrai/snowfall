@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, TrendingUp, Users, ArrowUpRight, Zap, CheckCircle2 } from 'lucide-react';
 
-const Home = () => {
+const GlobalHome = () => {
   return (
     <div className="bg-brand-50 dark:bg-brand-950 selection:bg-brand-600 selection:text-white font-sans text-brand-950 dark:text-brand-50 overflow-hidden transition-colors duration-500">
       
@@ -12,7 +12,7 @@ const Home = () => {
         <div className="flex-1 text-left relative z-10 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
             <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-            <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Indian Startups</span>
+            <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Global Startups</span>
           </div>
           
           <h1 className="text-[5rem] sm:text-[6rem] lg:text-[7.5rem] font-black tracking-tighter leading-[0.9] mb-8 text-brand-950 dark:text-white">
@@ -180,4 +180,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default GlobalHome;

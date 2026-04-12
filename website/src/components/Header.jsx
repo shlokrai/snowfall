@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Moon, Sun } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Moon, Sun, Globe, MapPin } from 'lucide-react';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const isGlobal = location.pathname.includes('/global');
 
   useEffect(() => {
     if (isDarkMode) {
@@ -14,6 +18,14 @@ const Header = () => {
   }, [isDarkMode]);
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
+  
+  const toggleRegion = () => {
+    if (isGlobal) {
+      navigate('/');
+    } else {
+      navigate('/global');
+    }
+  };
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 py-6 px-4 bg-transparent border-b border-transparent">
@@ -64,6 +76,27 @@ const Header = () => {
 
         {/* Right Side: Theme Toggle & Actions */}
         <div className="flex items-center space-x-4 pointer-events-auto">
+          {/* Region Switcher */}
+          <button 
+            onClick={toggleRegion} 
+            title={isGlobal ? "Switch to Local Vertical" : "Switch to Global Vertical"}
+            className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
+            aria-label="Toggle Global Vertical"
+          >
+            {isGlobal ? (
+              <MapPin size={20} strokeWidth={2.5} />
+            ) : (
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <path d="M12 5C10 5 8 8 8 12s2 7 4 7 4-3 4-7-2-7-4-7z"></path>
+                  <circle cx="12" cy="19" r="1.5" fill="currentColor"></circle>
+                  <circle cx="12" cy="5" r="1.5" fill="currentColor"></circle>
+                  <circle cx="19" cy="12" r="1.5" fill="currentColor"></circle>
+                  <circle cx="5" cy="12" r="1.5" fill="currentColor"></circle>
+                </svg>
+            )}
+          </button>
+
           {/* Theme Switcher */}
           <button 
             onClick={toggleTheme} 

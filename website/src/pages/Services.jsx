@@ -37,7 +37,7 @@ const Services = () => {
                <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Complex Tax Structuring</li>
                <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Flawless Monthly Bookkeeping</li>
                <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Strict ROC & Legal Compliance</li>
-               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> 100% Audit-Ready Books Guarantee</li>
+               <li className="flex items-center gap-3"><CheckCircle2 className="text-brand-600 dark:text-brand-400" size={20}/> Flawless Investor-Ready Books</li>
              </ul>
            </div>
         </div>
