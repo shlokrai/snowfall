@@ -87,7 +87,14 @@ const Header = () => {
             {isGlobal ? (
               <IndianRupee size={20} className="stroke-[2.5]" />
             ) : (
-              <img src={globalIcon} alt="Global" className="w-5 h-5 object-contain" />
+              <div 
+                className="w-[20px] h-[20px] bg-current"
+                style={{
+                  WebkitMask: `url(${globalIcon}) center/contain no-repeat`,
+                  mask: `url(${globalIcon}) center/contain no-repeat`
+                }}
+                aria-label="Global"
+              />
             )}
           </button>
 
