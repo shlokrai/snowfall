@@ -21,24 +21,18 @@ const Header = () => {
         
         {/* Left Side: Logo via Link */}
         <div className="pointer-events-auto">
-          <Link to="/" className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 group transition-colors hover:text-brand-600">
-            <svg 
-              className="w-10 h-10 transform group-hover:rotate-12 transition-transform shadow-md rounded-xl duration-300"
+          <Link to="/" className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
+            <svg
+              className="w-12 h-12 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
-              <g clipPath="url(#logo-clip)">
-                <rect width="100" height="100" fill="#DEF5E5" />
-                <rect y="25" width="100" height="75" fill="#BCEAD5" />
-                <rect y="50" width="100" height="50" fill="#9ED5C5" />
-                <rect y="75" width="100" height="25" fill="#8EC3B0" />
-              </g>
-              <defs>
-                <clipPath id="logo-clip">
-                  <rect width="100" height="100" rx="20" />
-                </clipPath>
-              </defs>
+              <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
+              <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="2" className="fill-brand-50/50 dark:fill-brand-900/50" />
+              <path d="M15 65 L50 25 L85 65" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300" />
+              <path d="M30 65 L50 40 L70 65" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-0.5 transition-transform duration-300" />
+              <path d="M22 55 Q35 45 50 60 T78 50" stroke="currentColor" strokeWidth="2" fill="none" />
             </svg>
-            <span>Snowfall <span className="text-brand-600">Advisory</span></span>
+            <span>Snowfall <span className="text-brand-600 dark:text-brand-400">Advisory</span></span>
           </Link>
         </div>
 

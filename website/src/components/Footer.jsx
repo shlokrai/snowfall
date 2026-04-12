@@ -7,10 +7,22 @@ const Footer = () => {
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <span className="text-3xl font-black tracking-tighter text-white">
-              Snowfall <span className="text-brand-400">Advisory</span>
-            </span>
-            <p className="mt-6 text-brand-200/80 text-base max-w-md font-light leading-relaxed">
+            <div className="flex items-center space-x-3 mb-6 group cursor-default">
+               <svg
+                  className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-400"
+                  viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
+                  <circle cx="50" cy="50" r="38" stroke="currentColor" strokeWidth="2" className="fill-brand-900/50" />
+                  <path d="M15 65 L50 25 L85 65" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-1 transition-transform duration-300" />
+                  <path d="M30 65 L50 40 L70 65" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" className="group-hover:-translate-y-0.5 transition-transform duration-300" />
+                  <path d="M22 55 Q35 45 50 60 T78 50" stroke="currentColor" strokeWidth="2" fill="none" />
+                </svg>
+                <span className="text-4xl font-black tracking-tighter text-white">
+                  Snowfall <span className="text-brand-400">Advisory</span>
+                </span>
+            </div>
+            <p className="text-brand-200/80 text-base max-w-md font-light leading-relaxed">
               We handle your compliance, bookkeeping, and legalities while plugging you into our private network for funding and explosive B2B growth.
             </p>
           </div>
