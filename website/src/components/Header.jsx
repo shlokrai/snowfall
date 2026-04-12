@@ -21,8 +21,24 @@ const Header = () => {
         
         {/* Left Side: Logo via Link */}
         <div className="pointer-events-auto">
-          <Link to="/" className="text-2xl font-black tracking-tighter text-brand-900 transition-colors hover:text-brand-600">
-            Snowfall <span className="text-brand-600">Advisory</span>
+          <Link to="/" className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 group transition-colors hover:text-brand-600">
+            <svg 
+              className="w-10 h-10 transform group-hover:rotate-12 transition-transform shadow-md rounded-xl duration-300"
+              viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clipPath="url(#logo-clip)">
+                <rect width="100" height="100" fill="#DEF5E5" />
+                <rect y="25" width="100" height="75" fill="#BCEAD5" />
+                <rect y="50" width="100" height="50" fill="#9ED5C5" />
+                <rect y="75" width="100" height="25" fill="#8EC3B0" />
+              </g>
+              <defs>
+                <clipPath id="logo-clip">
+                  <rect width="100" height="100" rx="20" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>Snowfall <span className="text-brand-600">Advisory</span></span>
           </Link>
         </div>
 

@@ -8,7 +8,7 @@ const Home = () => {
       {/* Hero Layout - Split Minimal */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Typography */}
-        <div className="flex-1 text-left relative z-10">
+        <div className="flex-1 text-left relative z-10 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
             <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
             <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Indian Startups</span>
@@ -34,9 +34,9 @@ const Home = () => {
         </div>
 
         {/* Right Abstract Visual / Stats Bento */}
-        <div className="flex-1 w-full lg:w-auto grid grid-cols-2 gap-4">
-          <div className="bg-brand-600 dark:bg-brand-800 text-brand-950 dark:text-white p-8 rounded-[2rem] flex flex-col justify-between aspect-square hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-600/30 transition-all cursor-default">
-            <Zap className="text-brand-950/50 dark:text-brand-400" size={32} />
+        <div className="flex-1 w-full lg:w-auto grid grid-cols-2 gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="bg-brand-600 dark:bg-brand-800 text-brand-950 dark:text-white p-8 rounded-[2rem] flex flex-col justify-between aspect-square hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-600/30 transition-all cursor-default group">
+            <Zap className="text-brand-950/50 dark:text-brand-400 group-hover:animate-wiggle" size={32} />
             <div>
               <p className="text-6xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white">250+</p>
               <p className="text-brand-950/80 dark:text-brand-200 font-medium">Businesses Trust Us</p>
@@ -60,8 +60,8 @@ const Home = () => {
       </section>
 
       {/* Break Marquee / Big Text Statement */}
-      <section className="py-24 bg-brand-600 dark:bg-brand-800 overflow-hidden flex whitespace-nowrap text-brand-950 dark:text-brand-50 border-y-8 border-brand-400 dark:border-brand-900 transition-colors duration-500">
-        <div className="animate-marquee flex gap-16 items-center">
+      <section className="py-24 bg-brand-600 dark:bg-brand-800 overflow-hidden flex whitespace-nowrap text-brand-950 dark:text-brand-50 border-y-8 border-brand-400 dark:border-brand-900 transition-colors duration-500 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="animate-marquee flex gap-16 items-center hover:[animation-play-state:paused] transition-all duration-300">
           <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Stop burning hours on red tape</span>
           <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Focus on revenue</span>
           <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Stop burning hours on red tape</span>
@@ -70,7 +70,7 @@ const Home = () => {
       </section>
 
       {/* Asymmetric Bento Pillars */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto" id="growth">
+      <section className="py-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto animate-fade-in-up" id="growth" style={{ animationDelay: '0.6s' }}>
         <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
           <h2 className="text-5xl lg:text-7xl font-black tracking-tighter leading-none max-w-2xl text-brand-950 dark:text-white">
             Everything you need. <br/><span className="text-brand-600 border-b-8 border-brand-400">Nothing you don't.</span>

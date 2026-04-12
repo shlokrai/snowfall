@@ -20,11 +20,21 @@ export default {
       },
       animation: {
         marquee: 'marquee 25s linear infinite',
+        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+        'wiggle': 'wiggle 1s ease-in-out infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-50%)' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
         }
       }
     },
