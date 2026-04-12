@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,9 +13,29 @@ import Articles from './pages/Articles';
 function AppContent() {
   const location = useLocation();
   const isGlobal = location.pathname.includes('/global');
+  
+  const [isLoading, setIsLoading] = useState(false);
+  const [transitionState, setTransitionState] = useState('');
+  const prevIsGlobal = useRef(isGlobal);
+
+  useEffect(() => {
+    // Only trigger loading screen when switching between Indian and Global verticals
+    if (prevIsGlobal.current !== isGlobal) {
+      setTransitionState(isGlobal ? 'to-global' : 'to-indian');
+      setIsLoading(true);
+      
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 2500); // 2.5 seconds to feel smooth but not too long
+      
+      prevIsGlobal.current = isGlobal;
+      return () => clearTimeout(timer);
+    }
+  }, [isGlobal]);
 
   return (
     <div className={`flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900 ${isGlobal ? 'global-theme' : ''}`}>
+      {isLoading && <LoadingScreen transitionState={transitionState} />}
       <Header />
       <main className="flex-grow">
         <Routes>
