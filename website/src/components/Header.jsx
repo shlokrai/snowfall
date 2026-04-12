@@ -16,7 +16,7 @@ const Header = () => {
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 py-6 px-4 bg-transparent border-b border-transparent">
+    <header className="absolute top-0 left-0 right-0 z-50 py-6 px-4 bg-transparent border-b border-transparent">
       <div className="max-w-[70rem] mx-auto hidden md:flex items-center justify-between pointer-events-none">
         
         {/* Left Side: Logo via Link */}
