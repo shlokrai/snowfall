@@ -12,16 +12,16 @@ const GlobalHome = () => {
         <div className="flex-1 text-left relative z-10 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
             <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-            <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Global Startups</span>
+            <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Global Businesses</span>
           </div>
           
           <h1 className="text-[5rem] sm:text-[6rem] lg:text-[7.5rem] font-black tracking-tighter leading-[0.9] mb-8 text-brand-950 dark:text-white">
-            Scale <br/>
-            <span className="text-brand-600 dark:text-brand-400">Faster.</span>
+            Enter India. <br/>
+            <span className="text-brand-600 dark:text-brand-400">Scale Globally.</span>
           </h1>
           
           <p className="text-xl sm:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-xl font-light leading-relaxed mb-12">
-            An exclusive ecosystem of Indian businesses. Focus solely on your product while we handle complex compliance and fuel your B2B growth.
+            Navigate the Indian market with confidence. We facilitate everything you need to operate in India from outside India—compliance, legal, tax, and funding.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -44,8 +44,8 @@ const GlobalHome = () => {
             </div>
           </div>
           <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
-             <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">₹500Cr</p>
-             <p className="text-brand-800 dark:text-brand-200 font-medium">+ Capital Facilitated</p>
+             <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">$50M+</p>
+             <p className="text-brand-800 dark:text-brand-200 font-medium">Cross-Border Capital</p>
           </div>
           <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
@@ -63,10 +63,10 @@ const GlobalHome = () => {
       {/* Break Marquee / Big Text Statement */}
       <section className="py-24 bg-brand-600 dark:bg-brand-800 overflow-hidden flex whitespace-nowrap text-brand-950 dark:text-brand-50 border-y-8 border-brand-400 dark:border-brand-900 transition-colors duration-500 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
         <div className="animate-marquee flex gap-16 items-center hover:[animation-play-state:paused] transition-all duration-300">
-          <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Stop burning hours on red tape</span>
-          <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Focus on revenue</span>
-          <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Stop burning hours on red tape</span>
-          <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Focus on revenue</span>
+          <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Seamless India Market Entry</span>
+          <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Global Growth</span>
+          <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Seamless India Market Entry</span>
+          <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Global Growth</span>
         </div>
       </section>
 
@@ -77,7 +77,7 @@ const GlobalHome = () => {
             Everything you need. <br/><span className="text-brand-600 border-b-8 border-brand-400">Nothing you don't.</span>
           </h2>
           <p className="text-xl text-brand-800/80 dark:text-brand-200/80 font-medium max-w-md pb-2">
-            The core pillars designed exclusively for high-growth Indian enterprises.
+            The core pillars designed exclusively for international businesses expanding into India.
           </p>
         </div>
 
@@ -90,9 +90,9 @@ const GlobalHome = () => {
                 <Shield size={32} className="text-brand-50 group-hover:text-brand-200 transition-colors" />
               </div>
               <div>
-                <h3 className="text-4xl font-black mb-4 tracking-tight text-white group-hover:text-brand-200 transition-colors">Advisory & Compliance</h3>
+                <h3 className="text-4xl font-black mb-4 tracking-tight text-white group-hover:text-brand-200 transition-colors">Cross-Border Compliance</h3>
                 <p className="text-brand-50/80 text-xl font-light max-w-lg leading-relaxed group-hover:text-brand-50 transition-colors">
-                  Bulletproof your business. From complex tax structuring to monthly bookkeeping, our elite network of certified professionals keeps your foundation rock solid.
+                  Bulletproof your global expansion. From complex international tax structuring to local Indian business regulations, our elite network keeps your setup legally compliant.
                 </p>
               </div>
             </div>
@@ -104,9 +104,9 @@ const GlobalHome = () => {
               <TrendingUp size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Funding Raise</h3>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Capital & FDI</h3>
               <p className="text-brand-800 dark:text-brand-200 font-medium leading-relaxed">
-                Don't navigate blind. We prep your financials and connect you with capital.
+                Don't navigate blind. We streamline Foreign Direct Investment (FDI) and guide cross-border funding.
               </p>
             </div>
           </div>
@@ -117,9 +117,9 @@ const GlobalHome = () => {
               <Users size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-3 tracking-tight text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">B2B Network</h3>
+              <h3 className="text-2xl font-bold mb-3 tracking-tight text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Local Partnerships</h3>
               <p className="text-brand-800 dark:text-brand-200 font-medium leading-relaxed">
-                Gain exclusive access to our partnered businesses to unlock revenue streams.
+                Gain access to our trusted network of Indian enterprises to accelerate your regional growth.
               </p>
             </div>
           </div>
@@ -127,10 +127,10 @@ const GlobalHome = () => {
           {/* Span Bottom Banner */}
           <div className="md:col-span-2 bg-brand-400 dark:bg-brand-800 border-2 border-brand-200 dark:border-brand-700 p-10 rounded-[2.5rem] flex items-center justify-between overflow-hidden relative hover:shadow-2xl hover:shadow-brand-400/20 transition-all duration-500 cursor-default group">
             <div className="relative z-10">
-              <h3 className="text-3xl font-black mb-2 tracking-tight text-brand-950 dark:text-white group-hover:translate-x-2 transition-transform duration-500">The "Founder's Focus" Commitments</h3>
+              <h3 className="text-3xl font-black mb-2 tracking-tight text-brand-950 dark:text-white group-hover:translate-x-2 transition-transform duration-500">The "Global Expansion" Guarantee</h3>
               <ul className="text-brand-950 dark:text-brand-50 font-bold space-y-2 mt-6">
-                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-75"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> Flawless Investor & Audit-Ready Books</li>
-                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-150"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> Definitive Legal & Tax Clarity</li>
+                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-75"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> 100% Worry-Free Entity Setup</li>
+                <li className="flex items-center gap-3 group-hover:translate-x-3 transition-transform duration-500 delay-150"><CheckCircle2 className="text-brand-950 dark:text-brand-400" size={20}/> Definitive Cross-Border Tax Strategy</li>
               </ul>
             </div>
             <div className="absolute right-0 -bottom-10 opacity-30 text-brand-950 dark:text-brand-900 group-hover:scale-125 group-hover:-rotate-12 transition-transform duration-700">
@@ -148,11 +148,11 @@ const GlobalHome = () => {
              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
            </svg>
            <p className="text-2xl lg:text-4xl font-light text-white mb-10 leading-relaxed italic">
-             "Working with this team changed the trajectory of our business. The strategic insight and execution speed are unmatched. Highly recommended!"
+             "Entering the Indian market seemed daunting until we partnered with Snowfall. They handled every compliance and tax roadblock, allowing us to launch smoothly and focus entirely on our product."
            </p>
            <div>
-             <h4 className="text-xl font-bold text-brand-200">Client Name Placeholder</h4>
-             <p className="text-brand-400/80 font-medium">CEO, StartupInc</p>
+             <h4 className="text-xl font-bold text-brand-200">International Client</h4>
+             <p className="text-brand-400/80 font-medium">Global Expansion Director</p>
            </div>
         </div>
       </section>
@@ -162,13 +162,13 @@ const GlobalHome = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/40 dark:from-brand-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-duration-1000"></div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center relative z-10">
           <h2 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-[0.9]">
-            Ready to <br/><span className="text-brand-600 dark:text-brand-400">Scale?</span>
+            Ready to <br/><span className="text-brand-600 dark:text-brand-400">Expand?</span>
           </h2>
           <p className="text-xl text-brand-800 dark:text-brand-200 mb-12 font-medium max-w-2xl leading-relaxed">
-            We actively facilitate funding and B2B partnerships. We selectively vet every business to maintain network quality.
+            Book a strategic growth session with us. Find out exactly how we can support your business's seamless entry and rapid scaling in India.
           </p>
           <Link to="/contact" className="group/btn inline-flex items-center space-x-4 bg-brand-950 dark:bg-brand-400 text-brand-50 dark:text-brand-950 px-10 py-6 rounded-full hover:scale-105 hover:bg-brand-600 dark:hover:bg-brand-600 hover:text-brand-950 hover:shadow-2xl hover:shadow-brand-950/20 transition-all shadow-xl">
-            <span className="text-xl font-bold">Schedule Discovery Call</span>
+            <span className="text-xl font-bold">Book Growth Session</span>
             <div className="bg-brand-50/20 dark:bg-brand-950/10 p-2 rounded-full group-hover/btn:bg-white group-hover/btn:text-brand-950 transition-colors">
               <ArrowUpRight size={24} className="group-hover/btn:rotate-45 transition-transform" />
             </div>
