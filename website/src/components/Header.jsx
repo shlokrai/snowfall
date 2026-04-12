@@ -87,20 +87,33 @@ const Header = () => {
           <button 
             onClick={toggleRegion} 
             title={isGlobal ? "Switch to Indian Vertical" : "Switch to Global Vertical"}
-            className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
+            className="group p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle Regional Vertical"
           >
             {isGlobal ? (
               <IndianRupee size={20} className="stroke-[2.5]" />
             ) : (
-              <div 
-                className="w-[20px] h-[20px] bg-current"
-                style={{
-                  WebkitMask: `url(${globalIcon}) center/contain no-repeat`,
-                  mask: `url(${globalIcon}) center/contain no-repeat`
-                }}
-                aria-label="Global"
-              />
+              <svg 
+                className="w-[22px] h-[22px] group-hover:rotate-180 transition-transform duration-[800ms] ease-in-out" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                {/* Globe */}
+                <circle cx="12" cy="12" r="5.5" />
+                <path d="M12 6.5C10.5 6.5 9 8.5 9 12s1.5 5.5 3 5.5 3-2.5 3-5.5-1.5-5.5-3-5.5Z" />
+                <path d="M6.5 12h11" />
+                
+                {/* Sync Arrows wrapping it */}
+                <path d="M20.5 16A8.5 8.5 0 0 0 15 4V1" />
+                <path d="M15 4h3" />
+                
+                <path d="M3.5 8A8.5 8.5 0 0 0 9 20v3" />
+                <path d="M9 20H6" />
+              </svg>
             )}
           </button>
 
