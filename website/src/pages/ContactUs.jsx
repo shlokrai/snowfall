@@ -27,10 +27,10 @@ const ContactUs = ({ isGlobal }) => {
   };
 
   return (
-    <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-40 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50" id="contact">
+    <div className="bg-gradient-to-b from-brand-50 via-white to-brand-50 dark:from-brand-950 dark:via-brand-900/40 dark:to-brand-950 min-h-screen pt-40 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50" id="contact">
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl lg:text-6xl font-black text-brand-950 dark:text-white tracking-tighter">
+          <h1 className="text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1">
             {isGlobal ? "Enter India With Precision" : "Let's Talk Growth"}
           </h1>
           <p className="mt-6 text-xl text-brand-800/80 dark:text-brand-200/80 max-w-2xl mx-auto font-light leading-relaxed">
@@ -41,7 +41,7 @@ const ContactUs = ({ isGlobal }) => {
         <div className="bg-white dark:bg-brand-900 rounded-[2.5rem] shadow-xl overflow-hidden md:flex border border-brand-200/50 dark:border-brand-800 transition-colors">
           {/* Contact Info Sidebar */}
           <div className="bg-brand-950 dark:bg-brand-800 p-8 lg:p-12 md:w-2/5 text-brand-50 flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-600 rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-r from-brand-600 to-brand-400 shadow-md rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2"></div>
             <div className="relative z-10">
               <h3 className="text-3xl font-black mb-8 tracking-tight text-white">Contact Info</h3>
               <p className="text-brand-200/80 mb-12 font-light leading-relaxed text-lg">
@@ -50,19 +50,19 @@ const ContactUs = ({ isGlobal }) => {
               
               <div className="space-y-8 font-medium">
                 <div className="flex items-center space-x-5 group cursor-default">
-                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-brand-600 transition-all">
+                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-all">
                     <Phone className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
                   <span className="text-lg group-hover:text-brand-200 transition-colors">+91 XXXXX XXXXX</span>
                 </div>
                 <div className="flex items-center space-x-5 group cursor-default">
-                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-brand-600 transition-all">
+                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 group-hover:scale-110 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-all">
                     <Mail className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
                   <span className="text-lg group-hover:text-brand-200 transition-colors">admin.snowfall@gmail.com</span>
                 </div>
                 <div className="flex items-start space-x-5 group cursor-default">
-                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-brand-600 transition-all min-w-[50px] flex justify-center">
+                  <div className="p-3 rounded-2xl bg-brand-800/50 dark:bg-brand-950/50 border border-brand-600/30 mt-1 group-hover:scale-110 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-all min-w-[50px] flex justify-center">
                     <MapPin className="text-brand-400 group-hover:text-brand-50 transition-colors" size={24} />
                   </div>
                   <span className="text-lg font-medium group-hover:text-brand-200 transition-colors">33 C.R. Avenue, 9th Floor, <br/>Suite No. 912<br/><span className="text-base text-brand-400/80 font-normal mt-1 block">Kolkata, West Bengal, India - 700012</span></span>
@@ -72,7 +72,7 @@ const ContactUs = ({ isGlobal }) => {
             
             <div className="mt-20 relative z-10">
               <a href="https://docs.google.com/forms/d/e/PLACEHOLDER/viewform" target="_blank" rel="noopener noreferrer" 
-                className="inline-block border-2 border-brand-600 text-brand-50 hover:bg-brand-600 hover:text-brand-950 px-6 py-4 rounded-full transition-all font-bold w-full text-center hover:scale-105 shadow-sm">
+                className="inline-block border-2 border-brand-600 text-brand-50 hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:text-brand-950 px-6 py-4 rounded-full transition-all font-bold w-full text-center hover:scale-105 shadow-sm">
                 Open Full Intake Form
               </a>
             </div>
@@ -126,7 +126,7 @@ const ContactUs = ({ isGlobal }) => {
                 </div>
 
                 <div className="pt-4">
-                  <button type="submit" className="w-full flex justify-center py-5 px-6 border-2 border-transparent rounded-full shadow-lg text-xl font-black text-white bg-brand-600 hover:bg-brand-400 hover:text-brand-950 hover:-translate-y-1 focus:outline-none transition-all">
+                  <button type="submit" className="w-full flex justify-center py-5 px-6 border-2 border-transparent rounded-full shadow-lg text-xl font-black text-white bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:bg-brand-400 hover:text-brand-950 hover:-translate-y-1 focus:outline-none transition-all">
                     Submit Application
                   </button>
                 </div>

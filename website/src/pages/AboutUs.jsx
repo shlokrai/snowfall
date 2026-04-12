@@ -1,13 +1,13 @@
-﻿import React from 'react';
+import React from 'react';
 import { Target, Users, BookOpen, CheckCircle2, Shield, Zap } from 'lucide-react';
 
 const AboutUs = ({ isGlobal }) => {
   return (
-    <div className="bg-brand-50 dark:bg-brand-950 min-h-screen pt-32 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50">
+    <div className="bg-gradient-to-b from-brand-50 via-white to-brand-50 dark:from-brand-950 dark:via-brand-900/40 dark:to-brand-950 min-h-screen pt-32 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50">
 
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center mb-24 animate-fade-in-up">
-        <h1 className="text-5xl lg:text-7xl font-black text-brand-950 dark:text-white tracking-tighter mb-8 bg-clip-text">
+        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
           The <span className="text-brand-600 dark:text-brand-400">Snowfall</span> Difference
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
@@ -18,8 +18,8 @@ const AboutUs = ({ isGlobal }) => {
       </section>      {/* Core Philosophy Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
-            <div className="w-16 h-16 bg-brand-50 dark:bg-brand-800 rounded-2xl flex flex-col justify-center items-center mb-8 group-hover:bg-brand-600 transition-colors">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
+            <div className="w-16 h-16 bg-brand-50 dark:bg-brand-800 rounded-2xl flex flex-col justify-center items-center mb-8 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-colors">
               <Target size={32} className="text-brand-950 dark:text-brand-50 group-hover:text-white" />
             </div>
             <h2 className="text-3xl font-black mb-4 text-brand-950 dark:text-white">Our Mission</h2>
@@ -30,7 +30,7 @@ const AboutUs = ({ isGlobal }) => {
             </p>
           </div>
           <div className="bg-brand-950 dark:bg-brand-800 border-2 border-transparent p-12 rounded-[2.5rem] hover:shadow-xl transition-all duration-500 group relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-600 rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2 group-hover:scale-150 group-hover:opacity-40 transition-all duration-1000"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-r from-brand-600 to-brand-400 shadow-md rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2 group-hover:scale-150 group-hover:opacity-40 transition-all duration-1000"></div>
             <div className="w-16 h-16 bg-brand-800 dark:bg-brand-900 rounded-2xl flex flex-col justify-center items-center mb-8 border border-brand-600/30 relative z-10">
               <Shield size={32} className="text-brand-400" />
             </div>
@@ -82,7 +82,7 @@ const AboutUs = ({ isGlobal }) => {
 
       {/* Leadership Placeholder */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center">
-         <h2 className="text-4xl lg:text-5xl font-black text-brand-950 dark:text-white tracking-tighter mb-12">
+         <h2 className="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-12">
           Your <span className="text-brand-600 dark:text-brand-400">Guides</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

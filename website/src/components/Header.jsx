@@ -35,14 +35,14 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
   };
 
   return (
-    <header className="absolute top-6 left-0 right-0 z-50 px-4">
-      <div className="max-w-[75rem] mx-auto hidden md:flex items-center justify-between pointer-events-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-gray-200 dark:border-brand-900 rounded-full px-4 py-2 shadow-sm transition-colors duration-300">
-
+    <header className="absolute top-0 left-0 right-0 z-50 py-6 px-4 bg-transparent border-b border-transparent">
+      <div className="max-w-[70rem] mx-auto hidden md:flex items-center justify-between pointer-events-none">
+        
         {/* Left Side: Logo via Link */}
-        <div className="flex-shrink-0">
-          <Link to={isGlobal ? "/global" : "/"} onClick={toggleSnowfall} className="flex items-center space-x-2 text-2xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600 pl-2">
+        <div className="pointer-events-auto">
+          <Link to={isGlobal ? "/global" : "/"} onClick={toggleSnowfall} className="flex items-center space-x-3 text-3xl font-black tracking-tighter text-brand-900 dark:text-white group transition-colors hover:text-brand-600">
             <svg
-              className="w-10 h-10 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
+              className="w-14 h-14 transform group-hover:scale-110 transition-transform duration-300 text-brand-600 dark:text-brand-400 relative overflow-visible"
               viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
             >
               <circle cx="50" cy="50" r="46" stroke="currentColor" strokeWidth="4" />
@@ -72,28 +72,28 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
           </Link>
         </div>
 
-        {/* Middle: Text Navigation */}
-        <nav className="flex space-x-1 lg:space-x-2 items-center">
-          <Link to={isGlobal ? "/global" : "/"} className="text-gray-600 dark:text-gray-300 whitespace-nowrap hover:text-brand-600 dark:hover:text-white rounded-full px-5 py-2 text-sm font-semibold transition-all">Home</Link>
-          <Link to={isGlobal ? "/global/about" : "/about"} className="text-gray-600 dark:text-gray-300 whitespace-nowrap hover:text-brand-600 dark:hover:text-white rounded-full px-5 py-2 text-sm font-semibold transition-all hidden sm:block">About</Link>
-          <Link to={isGlobal ? "/global/services" : "/services"} className="text-gray-600 dark:text-gray-300 whitespace-nowrap hover:text-brand-600 dark:hover:text-white rounded-full px-5 py-2 text-sm font-semibold transition-all hidden sm:block">Services</Link>
-          <Link to={isGlobal ? "/global/articles" : "/articles"} className="text-gray-600 dark:text-gray-300 whitespace-nowrap hover:text-brand-600 dark:hover:text-white rounded-full px-5 py-2 text-sm font-semibold transition-all hidden sm:block">Articles</Link>
-          <Link to={isGlobal ? "/global/contact" : "/contact"} className="text-gray-600 dark:text-gray-300 whitespace-nowrap hover:text-brand-600 dark:hover:text-white rounded-full px-5 py-2 text-sm font-semibold transition-all hidden lg:block">Contact</Link>
+        {/* Middle: Floating Pill Navigation */}
+        <nav className="pointer-events-auto bg-white/80 backdrop-blur-xl border border-brand-400 rounded-full px-3 py-2 flex space-x-2 shadow-sm transition-all hover:shadow-md overflow-x-auto max-w-full no-scrollbar">
+          <Link to={isGlobal ? "/global" : "/"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all">Home</Link>
+          <Link to={isGlobal ? "/global/about" : "/about"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">About</Link>
+          <Link to={isGlobal ? "/global/services" : "/services"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Services</Link>
+          <Link to={isGlobal ? "/global/articles" : "/articles"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden sm:block">Articles</Link>
+          <Link to={isGlobal ? "/global/contact" : "/contact"} className="text-brand-900/90 whitespace-nowrap hover:text-brand-900 hover:bg-brand-50 rounded-full px-5 py-2.5 text-base font-semibold transition-all hidden lg:block">Contact</Link>
         </nav>
 
         {/* Right Side: Theme Toggle & Actions */}
-        <div className="flex items-center space-x-3 flex-shrink-0">
+        <div className="flex items-center space-x-4 pointer-events-auto">
           {/* Region Switcher */}
           <button
             onClick={toggleRegion}
-            className="group relative p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-brand-600 dark:hover:text-white transition-colors flex items-center justify-center hover:scale-110"
+            className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle Regional Vertical"
           >
             {isGlobal ? (
-              <IndianRupee size={18} className="stroke-[2.5]" />
+              <IndianRupee size={20} className="stroke-[2.5]" />
             ) : (
               <svg
-                className="w-[20px] h-[20px] group-hover:rotate-180 transition-transform duration-[800ms] ease-in-out"
+                className="w-[22px] h-[22px] group-hover:rotate-180 transition-transform duration-[800ms] ease-in-out"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -116,7 +116,7 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
             )}
             
             {/* Custom Tooltip */}
-            <span className="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
+            <span className="absolute top-14 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
               {isGlobal ? "Switch to Indian Vertical" : "Switch to Global Vertical"}
             </span>
           </button>
@@ -124,17 +124,16 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
           {/* Theme Switcher */}
           <button
             onClick={toggleTheme}
-            className="group relative p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-brand-600 dark:hover:text-white transition-colors flex items-center justify-center hover:scale-110"
+            className="group relative p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
             aria-label="Toggle dark mode"
           >
-            {isDarkMode ? <Sun size={18} strokeWidth={2.5} /> : <Moon size={18} strokeWidth={2.5} />}
-
+            {isDarkMode ? <Sun size={20} strokeWidth={2.5} /> : <Moon size={20} strokeWidth={2.5} />}
+            
             {/* Custom Tooltip */}
-            <span className="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
+            <span className="absolute top-14 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-brand-900 dark:bg-brand-950 text-white text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap shadow-lg pointer-events-none z-50">
               {isDarkMode ? "Light Mode" : "Dark Mode"}
             </span>
-          </button>          
-          <Link to={isGlobal ? "/global/contact" : "/contact"} className="px-6 py-2.5 rounded-full bg-brand-900 dark:bg-brand-500 text-white font-semibold text-sm hover:scale-105 hover:bg-brand-600 dark:hover:bg-brand-400 hover:shadow-lg transition-all">
+          </button>          <Link to={isGlobal ? "/global/contact" : "/contact"} className="px-8 py-3 rounded-full bg-brand-900 text-white font-bold text-base hover:scale-105 hover:bg-brand-600 hover:shadow-lg transition-all shadow-sm">
             Book Call
           </Link>
         </div>

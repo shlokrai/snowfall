@@ -26,8 +26,6 @@ export default {
         'snow-2': 'snowFall 2.5s linear infinite 0.5s',
         'snow-3': 'snowFall 2.2s linear infinite 1.2s',
         'snow-4': 'snowFall 3s linear infinite 0.8s',
-        'currency-fall': 'currencyFall linear infinite forwards',
-        'global-snow-fall': 'globalSnowFall linear infinite',
       },
       keyframes: {
         marquee: {
@@ -47,18 +45,6 @@ export default {
           '20%': { opacity: '1' },
           '80%': { opacity: '1' },
           '100%': { transform: 'translateY(110px) translateX(-15px)', opacity: '0' },
-        },
-        globalSnowFall: {
-          '0%': { transform: 'translateY(-10vh) translateX(0)', opacity: '0' },
-          '10%': { opacity: '0.8' },
-          '90%': { opacity: '0.8' },
-          '100%': { transform: 'translateY(110vh) translateX(-2vh)', opacity: '0' },
-        },
-        currencyFall: {
-          '0%': { transform: 'translateY(-10vh) translateX(-10px) rotate(-15deg)', opacity: '0' },
-          '20%': { opacity: '1' },
-          '80%': { opacity: '1' },
-          '100%': { transform: 'translateY(110vh) translateX(20px) rotate(15deg)', opacity: '0' },
         }
       }
     },

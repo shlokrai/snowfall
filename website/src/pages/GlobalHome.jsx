@@ -4,14 +4,14 @@ import { Shield, TrendingUp, Users, ArrowUpRight, Zap, CheckCircle2 } from 'luci
 
 const GlobalHome = () => {
   return (
-    <div className="bg-brand-50 dark:bg-brand-950 selection:bg-brand-600 selection:text-white font-sans text-brand-950 dark:text-brand-50 overflow-hidden transition-colors duration-500">
+    <div className="bg-brand-50 dark:bg-brand-950 selection:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md selection:text-white font-sans text-brand-950 dark:text-brand-50 overflow-hidden transition-colors duration-500">
       
       {/* Hero Layout - Split Minimal */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left Typography */}
         <div className="flex-1 text-left relative z-10 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-brand-900 border border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
-            <span className="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
+            <span className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-600 to-brand-400 shadow-md animate-pulse"></span>
             <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">For Global Businesses</span>
           </div>
           
@@ -36,22 +36,22 @@ const GlobalHome = () => {
 
         {/* Right Abstract Visual / Stats Bento */}
         <div className="flex-1 w-full lg:w-auto grid grid-cols-2 gap-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          <div className="bg-brand-600 dark:bg-brand-800 text-brand-950 dark:text-white p-8 rounded-[2rem] flex flex-col justify-between aspect-square hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-600/30 transition-all cursor-default group">
+          <div className="bg-gradient-to-r from-brand-600 to-brand-400 shadow-md dark:bg-brand-800 text-brand-950 dark:text-white p-8 rounded-[2rem] flex flex-col justify-between aspect-square hover:scale-[1.02] hover:shadow-2xl hover:shadow-brand-600/30 transition-all cursor-default group">
             <Zap className="text-brand-950/50 dark:text-brand-400 group-hover:animate-wiggle" size={32} />
             <div>
               <p className="text-6xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white">250+</p>
               <p className="text-brand-950/80 dark:text-brand-200 font-medium">Businesses Trust Us</p>
             </div>
           </div>
-          <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">$50M+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Cross-Border Capital</p>
           </div>
-          <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Certified Professionals</p>
           </div>
-          <div className="bg-brand-200 dark:bg-brand-800 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-center items-center aspect-square flex-col text-center hover:scale-[1.02] hover:bg-brand-400 dark:hover:bg-brand-600 hover:shadow-xl transition-all cursor-default relative overflow-hidden group">
+          <div className="bg-brand-200 dark:bg-brand-800 border-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-center items-center aspect-square flex-col text-center hover:scale-[1.02] hover:bg-brand-400 dark:hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:shadow-xl transition-all cursor-default relative overflow-hidden group">
              <div className="w-16 h-16 rounded-full bg-brand-50 dark:bg-brand-900 shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                <ArrowUpRight size={28} className="text-brand-950 dark:text-brand-50" />
              </div>
@@ -61,7 +61,7 @@ const GlobalHome = () => {
       </section>
 
       {/* Break Marquee / Big Text Statement */}
-      <section className="py-24 bg-brand-600 dark:bg-brand-800 overflow-hidden flex whitespace-nowrap text-brand-950 dark:text-brand-50 border-y-8 border-brand-400 dark:border-brand-900 transition-colors duration-500 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+      <section className="py-24 bg-gradient-to-r from-brand-600 to-brand-400 shadow-md dark:bg-brand-800 overflow-hidden flex whitespace-nowrap text-brand-950 dark:text-brand-50 border-y-8 border-brand-400 dark:border-brand-900 transition-colors duration-500 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
         <div className="animate-marquee flex gap-16 items-center hover:[animation-play-state:paused] transition-all duration-300">
           <span className="text-6xl font-black uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-brand-200 dark:to-white">Seamless India Market Entry</span>
           <span className="text-6xl font-black text-brand-50 dark:text-brand-50 uppercase tracking-tighter">Global Growth</span>
@@ -83,10 +83,10 @@ const GlobalHome = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[24rem]">
           {/* Large Card */}
-          <div className="md:col-span-2 bg-brand-950 dark:bg-brand-900 text-brand-50 p-12 rounded-[2.5rem] relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-950/20 hover:-translate-y-2 transition-all duration-500 cursor-default">
-            <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-brand-600 rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/4 group-hover:scale-110 group-hover:opacity-40 transition-all duration-700"></div>
+          <div className="md:col-span-2 bg-gradient-to-br from-brand-950 to-brand-800 dark:from-brand-900 dark:to-brand-800 shadow-xl text-brand-50 p-12 rounded-[2.5rem] relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-950/20 hover:-translate-y-2 transition-all duration-500 cursor-default">
+            <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-r from-brand-600 to-brand-400 shadow-md rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/4 group-hover:scale-110 group-hover:opacity-40 transition-all duration-700"></div>
             <div className="relative z-10 h-full flex flex-col justify-between">
-              <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:border-brand-400/50 group-hover:scale-110 group-hover:bg-brand-600/30 transition-all">
+              <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 group-hover:border-brand-400/50 group-hover:scale-110 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md/30 transition-all">
                 <Shield size={32} className="text-brand-50 group-hover:text-brand-200 transition-colors" />
               </div>
               <div>
@@ -99,8 +99,8 @@ const GlobalHome = () => {
           </div>
 
           {/* Small Card 1 */}
-          <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
-            <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-brand-600 group-hover:border-brand-600 transition-all duration-500">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
+            <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md group-hover:border-brand-600 transition-all duration-500">
               <TrendingUp size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>
             <div>
@@ -112,8 +112,8 @@ const GlobalHome = () => {
           </div>
 
           {/* Small Card 2 */}
-          <div className="bg-white dark:bg-brand-900 border-2 border-transparent p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
-            <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-brand-600 group-hover:border-brand-600 transition-all duration-500">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
+            <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md group-hover:border-brand-600 transition-all duration-500">
               <Users size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>
             <div>
@@ -142,7 +142,7 @@ const GlobalHome = () => {
 
       {/* Testimonial Placeholder */}
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto animate-fade-in-up" id="testimonials">
-        <div className="bg-brand-950 dark:bg-brand-900 border-2 border-transparent p-12 lg:p-16 rounded-[3rem] text-center relative overflow-hidden group hover:shadow-2xl transition-all duration-500 cursor-default">
+        <div className="bg-gradient-to-br from-brand-950 to-brand-800 dark:from-brand-900 dark:to-brand-800 shadow-xl border-2 border-transparent p-12 lg:p-16 rounded-[3rem] text-center relative overflow-hidden group hover:shadow-2xl transition-all duration-500 cursor-default">
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-400 to-transparent opacity-50"></div>
            <svg className="w-12 h-12 mx-auto mb-8 text-brand-600 dark:text-brand-400 opacity-50" fill="currentColor" viewBox="0 0 24 24">
              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
@@ -167,7 +167,7 @@ const GlobalHome = () => {
           <p className="text-xl text-brand-800 dark:text-brand-200 mb-12 font-medium max-w-2xl leading-relaxed">
             Book a strategic growth session with us. Find out exactly how we can support your business's seamless entry and rapid scaling in India.
           </p>
-          <Link to="/global/contact" className="group/btn inline-flex items-center space-x-4 bg-brand-950 dark:bg-brand-400 text-brand-50 dark:text-brand-950 px-10 py-6 rounded-full hover:scale-105 hover:bg-brand-600 dark:hover:bg-brand-600 hover:text-brand-950 hover:shadow-2xl hover:shadow-brand-950/20 transition-all shadow-xl">
+          <Link to="/global/contact" className="group/btn inline-flex items-center space-x-4 bg-brand-950 dark:bg-brand-400 text-brand-50 dark:text-brand-950 px-10 py-6 rounded-full hover:scale-105 hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md dark:hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md hover:text-brand-950 hover:shadow-2xl hover:shadow-brand-950/20 transition-all shadow-xl">
             <span className="text-xl font-bold">Book Growth Session</span>
             <div className="bg-brand-50/20 dark:bg-brand-950/10 p-2 rounded-full group-hover/btn:bg-white group-hover/btn:text-brand-950 transition-colors">
               <ArrowUpRight size={24} className="group-hover/btn:rotate-45 transition-transform" />
