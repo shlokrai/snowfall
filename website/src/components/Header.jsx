@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Moon, Sun, Globe, MapPin } from 'lucide-react';
+import { Moon, Sun, IndianRupee } from 'lucide-react';
+import globalIcon from '../assets/global-icon.png';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -79,21 +80,14 @@ const Header = () => {
           {/* Region Switcher */}
           <button 
             onClick={toggleRegion} 
-            title={isGlobal ? "Switch to Local Vertical" : "Switch to Global Vertical"}
+            title={isGlobal ? "Switch to Indian Vertical" : "Switch to Global Vertical"}
             className="p-3 rounded-full border border-brand-400 bg-white/80 backdrop-blur-md text-brand-900 hover:bg-brand-50 transition-colors shadow-sm flex items-center justify-center hover:scale-110"
-            aria-label="Toggle Global Vertical"
+            aria-label="Toggle Regional Vertical"
           >
             {isGlobal ? (
-              <MapPin size={20} strokeWidth={2.5} />
+              <IndianRupee size={20} className="stroke-[2.5]" />
             ) : (
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="7"></circle>
-                  <path d="M12 5C10 5 8 8 8 12s2 7 4 7 4-3 4-7-2-7-4-7z"></path>
-                  <circle cx="12" cy="19" r="1.5" fill="currentColor"></circle>
-                  <circle cx="12" cy="5" r="1.5" fill="currentColor"></circle>
-                  <circle cx="19" cy="12" r="1.5" fill="currentColor"></circle>
-                  <circle cx="5" cy="12" r="1.5" fill="currentColor"></circle>
-                </svg>
+              <img src={globalIcon} alt="Global" className="w-5 h-5 object-contain" />
             )}
           </button>
 
