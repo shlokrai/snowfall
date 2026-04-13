@@ -21,7 +21,7 @@ const GlobalHome = () => {
           </h1>
           
           <p className="text-xl sm:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-xl font-light leading-relaxed mb-12">
-            Navigate the Indian market with confidence. We facilitate everything you need to operate in India from outside Indiaâ€”compliance, legal, tax, and funding.
+            Navigate the Indian market with confidence. We facilitate everything you need to operate in India from outside India&mdash;compliance, legal, tax, and funding.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
@@ -181,3 +181,4 @@ const GlobalHome = () => {
 };
 
 export default GlobalHome;
+
