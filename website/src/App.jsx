@@ -10,6 +10,9 @@ import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Articles from './pages/Articles';
+import Compliance from './pages/Compliance';
+import Growth from './pages/Growth';
+import Network from './pages/Network';
 
 function AppContent() {
   const location = useLocation();
@@ -51,6 +54,12 @@ function AppContent() {
           
           <Route path="/services" element={<Services isGlobal={false} />} />
           <Route path="/global/services" element={<Services isGlobal={true} />} />
+          <Route path="/services/compliance" element={<Compliance isGlobal={false} />} />
+          <Route path="/global/services/compliance" element={<Compliance isGlobal={true} />} />
+          <Route path="/services/growth" element={<Growth isGlobal={false} />} />
+          <Route path="/global/services/growth" element={<Growth isGlobal={true} />} />
+          <Route path="/services/network" element={<Network isGlobal={false} />} />
+          <Route path="/global/services/network" element={<Network isGlobal={true} />} />
           
           <Route path="/articles" element={<Articles isGlobal={false} />} />
           <Route path="/global/articles" element={<Articles isGlobal={true} />} />
@@ -73,3 +82,4 @@ function App() {
 }
 
 export default App;
+

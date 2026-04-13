@@ -62,7 +62,7 @@ const LoadingScreen = ({ transitionState }) => {
           <path d="M30 65 L50 40 L70 65" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none" className="transition-colors duration-[2500ms]" />
           <path d="M22 55 Q35 45 50 60 T78 50" stroke="currentColor" strokeWidth="2" fill="none" className="transition-colors duration-[2500ms]" />
         </svg>
-        <span className="text-5xl font-black tracking-tighter">
+        <span className="text-4xl md:text-5xl font-black tracking-tighter">
           Snowfall <span className={`transition-colors duration-[2500ms] ${isToGlobal ? 'text-[#9ba4b5]' : 'text-[#8EC3B0]'}`}>Advisory</span>
         </span>
       </div>

@@ -6,9 +6,9 @@ const Footer = () => {
   const isGlobal = location.pathname.includes('/global');
 
   return (
-    <footer className="bg-brand-900 dark:bg-brand-950 text-white py-16 border-t border-brand-800 transition-colors duration-500">
+    <footer className="bg-brand-900 dark:bg-brand-950 text-white py-8 md:py-16 border-t border-brand-800 transition-colors duration-500">
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8 md:p-12">
           <div className="col-span-1 md:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6 group cursor-default">
                <svg
@@ -49,9 +49,9 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-bold text-brand-400 tracking-wider uppercase mb-6">Solutions</h3> 
             <ul className="space-y-4">
-              <li><a href="#compliance" className="text-brand-50 hover:text-brand-400 transition-colors font-medium">Compliance & Advisory</a></li>
-              <li><a href="#growth" className="text-brand-50 hover:text-brand-400 transition-colors font-medium">Growth & Funding</a></li>
-              <li><a href="#network" className="text-brand-50 hover:text-brand-400 transition-colors font-medium">The Snowfall Network</a></li>
+              <li><Link to={isGlobal ? "/global/services/compliance" : "/services/compliance"} className="text-brand-50 hover:text-brand-400 transition-colors font-medium">Compliance & Advisory</Link></li>
+              <li><Link to={isGlobal ? "/global/services/growth" : "/services/growth"} className="text-brand-50 hover:text-brand-400 transition-colors font-medium">Growth & Funding</Link></li>
+              <li><Link to={isGlobal ? "/global/services/network" : "/services/network"} className="text-brand-50 hover:text-brand-400 transition-colors font-medium">The Snowfall Network</Link></li>
             </ul>
           </div>
           <div>
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-brand-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-200/60 font-medium">
+        <div className="mt-16 border-t border-brand-800 pt-8 flex flex-col md:flex-col md:flex-row justify-between items-center text-sm text-brand-200/60 font-medium">
           <p>&copy; {new Date().getFullYear()} Snowfall Advisory Private Limited. All rights reserved.</p>
         </div>
       </div>

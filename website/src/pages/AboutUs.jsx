@@ -7,7 +7,7 @@ const AboutUs = ({ isGlobal }) => {
 
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center mb-24 animate-fade-in-up">
-        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
           The <span className="text-brand-600 dark:text-brand-400">Snowfall</span> Difference
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
@@ -17,8 +17,8 @@ const AboutUs = ({ isGlobal }) => {
         </p>
       </section>      {/* Core Philosophy Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto mb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
+        <div className="grid grid-cols-1 md:grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 md:p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
             <div className="w-16 h-16 bg-brand-50 dark:bg-brand-800 rounded-2xl flex flex-col justify-center items-center mb-8 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-colors">
               <Target size={32} className="text-brand-950 dark:text-brand-50 group-hover:text-white" />
             </div>
@@ -29,7 +29,7 @@ const AboutUs = ({ isGlobal }) => {
                 : 'To be the ultimate "Guide" to the Indian founder. We strip away the villainous red tape, compliance headaches, and isolation by providing magic weapons: elite professionals, network access, and capital connections.'}
             </p>
           </div>
-          <div className="bg-brand-950 dark:bg-brand-800 border-2 border-transparent p-12 rounded-[2.5rem] hover:shadow-xl transition-all duration-500 group relative overflow-hidden">
+          <div className="bg-brand-950 dark:bg-brand-800 border-2 border-transparent p-8 md:p-12 rounded-[2.5rem] hover:shadow-xl transition-all duration-500 group relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-r from-brand-600 to-brand-400 shadow-md rounded-full blur-[80px] opacity-20 -translate-y-1/2 translate-x-1/2 group-hover:scale-150 group-hover:opacity-40 transition-all duration-1000"></div>
             <div className="w-16 h-16 bg-brand-800 dark:bg-brand-900 rounded-2xl flex flex-col justify-center items-center mb-8 border border-brand-600/30 relative z-10">
               <Shield size={32} className="text-brand-400" />
@@ -38,7 +38,7 @@ const AboutUs = ({ isGlobal }) => {
               {isGlobal ? "The Expansion Guarantees" : "The Founder's Commitments"}
             </h2>
             <ul className="text-brand-200/90 space-y-6 font-light text-lg relative z-10">
-              <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+              <li className="flex flex-col sm:flex-col md:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
                   <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
                   <strong className="text-white font-semibold leading-tight mt-0.5">
@@ -51,7 +51,7 @@ const AboutUs = ({ isGlobal }) => {
                     : "Flawless investor-ready books, maintained with absolute precision."}
                 </span>
               </li>
-              <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+              <li className="flex flex-col sm:flex-col md:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
                   <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
                   <strong className="text-white font-semibold leading-tight mt-0.5">
@@ -64,7 +64,7 @@ const AboutUs = ({ isGlobal }) => {
                     : "Clear, actionable legal and tax answers without the ambiguity."}
                 </span>
               </li>
-              <li className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
+              <li className="flex flex-col sm:flex-col md:flex-row sm:items-start gap-2 sm:gap-4">
                 <div className="flex items-start gap-3 sm:w-48 shrink-0">
                   <CheckCircle2 className="text-brand-400 shrink-0 mt-1" size={20}/>
                   <strong className="text-white font-semibold leading-tight mt-0.5">Exclusivity:</strong>
@@ -82,11 +82,11 @@ const AboutUs = ({ isGlobal }) => {
 
       {/* Leadership Placeholder */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center">
-         <h2 className="text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-12">
+         <h2 className="text-4xl lg:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-12">
           Your <span className="text-brand-600 dark:text-brand-400">Guides</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div className="bg-brand-100 dark:bg-brand-900/50 p-10 rounded-[2.5rem] hover:-translate-y-2 transition-transform">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-brand-100 dark:bg-brand-900/50 p-6 md:p-10 rounded-[2.5rem] hover:-translate-y-2 transition-transform">
              <div className="w-32 h-32 mx-auto bg-brand-200 dark:bg-brand-800 rounded-full mb-6 border-4 border-white dark:border-brand-950 flex items-center justify-center">
                 <Users size={40} className="text-brand-400/50" />
              </div>
@@ -94,7 +94,7 @@ const AboutUs = ({ isGlobal }) => {
              <p className="text-brand-600 dark:text-brand-400 font-bold mb-4 uppercase tracking-wider text-sm">Managing Partner</p>
              <p className="text-brand-800 dark:text-brand-200/80 font-light">With deep roots in the {isGlobal ? 'Indian corporate and regulatory ecosystem' : 'Indian startup ecosystem'}, orchestrating multi-crore capital raises.</p>
           </div>
-          <div className="bg-brand-100 dark:bg-brand-900/50 p-10 rounded-[2.5rem] hover:-translate-y-2 transition-transform">
+          <div className="bg-brand-100 dark:bg-brand-900/50 p-6 md:p-10 rounded-[2.5rem] hover:-translate-y-2 transition-transform">
              <div className="w-32 h-32 mx-auto bg-brand-200 dark:bg-brand-800 rounded-full mb-6 border-4 border-white dark:border-brand-950 flex items-center justify-center">
                 <Users size={40} className="text-brand-400/50" />
              </div>
