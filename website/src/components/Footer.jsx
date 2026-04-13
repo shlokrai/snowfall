@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-16 border-t border-brand-800 pt-8 flex flex-col md:flex-col md:flex-row justify-between items-center text-sm text-brand-200/60 font-medium">
+        <div className="mt-16 border-t border-brand-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-brand-200/60 font-medium">
           <p>&copy; {new Date().getFullYear()} Snowfall Advisory Private Limited. All rights reserved.</p>
         </div>
       </div>

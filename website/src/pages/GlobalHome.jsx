@@ -7,7 +7,7 @@ const GlobalHome = () => {
     <div className="bg-brand-50 dark:bg-brand-950 selection:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md selection:text-white font-sans text-brand-950 dark:text-brand-50 overflow-hidden transition-colors duration-500">
       
       {/* Hero Layout - Split Minimal */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto flex flex-col lg:flex-col md:flex-row items-center gap-8 md:p-16">
+      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto flex flex-col lg:flex-row items-center gap-8 md:p-16">
         {/* Left Typography */}
         <div className="flex-1 text-left relative z-10 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-brand-200 dark:border-brand-800 shadow-sm mb-8 hover:shadow-md hover:-translate-y-0.5 transition-all cursor-default">
@@ -24,7 +24,7 @@ const GlobalHome = () => {
             Navigate the Indian market with confidence. We facilitate everything you need to operate in India from outside Indiaâ€”compliance, legal, tax, and funding.
           </p>
           
-          <div className="flex flex-col sm:flex-col md:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <Link to="/global/contact" className="group inline-flex items-center justify-between px-8 py-5 rounded-full text-lg font-medium text-brand-950 dark:text-brand-950 bg-brand-200 dark:bg-brand-400 hover:bg-brand-400 dark:hover:bg-brand-200 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 sm:w-80">
               <span>Start Growing</span>
               <div className="bg-brand-950/10 p-2 rounded-full group-hover:rotate-45 transition-transform">
@@ -72,7 +72,7 @@ const GlobalHome = () => {
 
       {/* Asymmetric Bento Pillars */}
       <section className="py-32 px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto animate-fade-in-up" id="growth" style={{ animationDelay: '0.6s' }}>
-        <div className="flex flex-col lg:flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div className="flex flex-col lg:flex-row justify-between items-end mb-16 gap-8">
           <h2 className="text-4xl md:text-5xl lg:text-5xl md:text-7xl font-black tracking-tighter leading-none max-w-2xl text-brand-950 dark:text-white">
             Everything you need. <br/><span className="text-brand-600 border-b-8 border-brand-400">Nothing you don't.</span>
           </h2>
