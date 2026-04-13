@@ -67,7 +67,7 @@ const Articles = ({ isGlobal }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
            {/* Article 1 */}
-           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
               <div>
                 <div className="h-48 rounded-xl bg-brand-100 dark:bg-brand-800 mb-6 overflow-hidden relative">
                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tax Strategy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
@@ -88,7 +88,7 @@ const Articles = ({ isGlobal }) => {
            </div>
 
            {/* Article 2 */}
-           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
               <div>
                 <div className="h-48 rounded-xl bg-brand-100 dark:bg-brand-800 mb-6 overflow-hidden relative">
                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="B2B Network" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />
@@ -109,7 +109,7 @@ const Articles = ({ isGlobal }) => {
            </div>
 
            {/* Article 3 */}
-           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 rounded-[2rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
               <div>
                 <div className="h-48 rounded-xl bg-brand-100 dark:bg-brand-800 mb-6 overflow-hidden relative">
                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grand Slam Offer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" />

@@ -43,11 +43,11 @@ const GlobalHome = () => {
               <p className="text-brand-950/80 dark:text-brand-200 font-medium">Businesses Trust Us</p>
             </div>
           </div>
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">$50M+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Cross-Border Capital</p>
           </div>
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:-translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:-translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Certified Professionals</p>
           </div>
@@ -99,7 +99,7 @@ const GlobalHome = () => {
           </div>
 
           {/* Small Card 1 */}
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-6 md:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-6 md:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
             <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md group-hover:border-brand-600 transition-all duration-500">
               <TrendingUp size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>
@@ -112,7 +112,7 @@ const GlobalHome = () => {
           </div>
 
           {/* Small Card 2 */}
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-6 md:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-6 md:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-brand-400 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 cursor-default group">
             <div className="w-14 h-14 bg-brand-50 dark:bg-brand-800 border border-brand-200 dark:border-brand-700 rounded-2xl flex items-center justify-center text-brand-950 dark:text-brand-50 group-hover:scale-[1.15] group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md group-hover:border-brand-600 transition-all duration-500">
               <Users size={28} className="group-hover:text-brand-950 transition-colors" />
             </div>

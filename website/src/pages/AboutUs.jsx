@@ -18,7 +18,7 @@ const AboutUs = ({ isGlobal }) => {
       </section>      {/* Core Philosophy Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[90rem] mx-auto mb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 md:p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg border-transparent p-8 md:p-12 rounded-[2.5rem] hover:border-brand-400 hover:shadow-xl transition-all duration-500 group">
             <div className="w-16 h-16 bg-brand-50 dark:bg-brand-800 rounded-2xl flex flex-col justify-center items-center mb-8 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md transition-colors">
               <Target size={32} className="text-brand-950 dark:text-brand-50 group-hover:text-white" />
             </div>

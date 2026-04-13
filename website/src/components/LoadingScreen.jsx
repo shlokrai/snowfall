@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useState } from 'react';
 
-const globalCurrencies = ['$', 'â‚¬', 'Â£', 'Â¥', 'â‚½', 'â‚©'];
+const globalCurrencies = ['$', '€', '£', '¥', '₽', '₩'];
 
 const LoadingScreen = ({ transitionState }) => {
   const [fallingItems, setFallingItems] = useState([]);
@@ -8,8 +8,8 @@ const LoadingScreen = ({ transitionState }) => {
   const isToGlobal = transitionState === 'to-global';
 
   useEffect(() => {
-    const activeCurrencies = isToGlobal ? globalCurrencies : ['â‚¹'];
-    
+    const activeCurrencies = isToGlobal ? globalCurrencies : ['₹'];
+
     const items = Array.from({ length: 30 }).map((_, i) => ({
       id: i,
       symbol: activeCurrencies[Math.floor(Math.random() * activeCurrencies.length)],
