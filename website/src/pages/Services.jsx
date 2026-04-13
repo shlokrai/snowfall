@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Shield, TrendingUp, Users, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const Services = ({ isGlobal }) => {
           <span className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-600 to-brand-400 shadow-md animate-pulse"></span>
           <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">The Magic Weapons</span>
         </div>
-        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
+        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
           Our Core <span className="text-brand-600 dark:text-brand-400">Pillars</span>
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
@@ -31,7 +31,7 @@ const Services = ({ isGlobal }) => {
              </div>
            </div>
            <div className="lg:w-2/3">
-             <h2 className="text-4xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+             <h2 className="text-4xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
                {isGlobal ? "The Shield: Cross-Border Compliance" : "The Shield: Advisory & Compliance"}
              </h2>
              <p className="text-xl text-brand-800/80 dark:text-brand-200/80 font-light leading-relaxed mb-8">
@@ -82,7 +82,7 @@ const Services = ({ isGlobal }) => {
              </div>
            </div>
            <div className="lg:w-2/3">
-             <h2 className="text-4xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1">
+             <h2 className="text-4xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1">
                {isGlobal ? "The Catalyst: Local Indian Partnerships" : "The Catalyst: Snowfall B2B Network"}
              </h2>
              <p className="text-xl text-brand-800 dark:text-brand-200/80 font-light leading-relaxed mb-8">

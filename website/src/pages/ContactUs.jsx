@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Mail, Phone, MapPin, CheckCircle2 } from 'lucide-react';
 
 const ContactUs = ({ isGlobal }) => {
@@ -30,7 +30,7 @@ const ContactUs = ({ isGlobal }) => {
     <div className="bg-gradient-to-b from-brand-50 via-white to-brand-50 dark:from-brand-950 dark:via-brand-900/40 dark:to-brand-950 min-h-screen pt-40 pb-24 transition-colors duration-500 font-sans text-brand-950 dark:text-brand-50" id="contact">
       <div className="max-w-[70rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1">
+          <h1 className="text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1">
             {isGlobal ? "Enter India With Precision" : "Let's Talk Growth"}
           </h1>
           <p className="mt-6 text-xl text-brand-800/80 dark:text-brand-200/80 max-w-2xl mx-auto font-light leading-relaxed">

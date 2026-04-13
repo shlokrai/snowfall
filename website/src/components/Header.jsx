@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Moon, Sun, IndianRupee, Menu, X } from 'lucide-react';
 import globalIcon from '../assets/global-icon.png';

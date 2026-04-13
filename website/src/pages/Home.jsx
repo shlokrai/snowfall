@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, TrendingUp, Users, ArrowUpRight, Zap, CheckCircle2 } from 'lucide-react';
 
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
-             <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">₹500Cr</p>
+             <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">â‚¹500Cr</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">+ Capital Facilitated</p>
           </div>
           <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">

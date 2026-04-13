@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { ArrowRight, Calendar, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Articles = ({ isGlobal }) => {
           <span className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-600 to-brand-400 shadow-md animate-pulse"></span>
           <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">Snowfall Intel</span>
         </div>
-        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
+        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
           {isGlobal ? "Global " : "Founder "} <span className="text-brand-600 dark:text-brand-400">Insights</span>
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">

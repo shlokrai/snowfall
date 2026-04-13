@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Target, Users, BookOpen, CheckCircle2, Shield, Zap } from 'lucide-react';
 
 const AboutUs = ({ isGlobal }) => {
@@ -7,7 +7,7 @@ const AboutUs = ({ isGlobal }) => {
 
       {/* Hero Section */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center mb-24 animate-fade-in-up">
-        <h1 className="text-4xl md:text-5xl lg:text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
+        <h1 className="text-4xl md:text-5xl lg:text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-8 bg-clip-text">
           The <span className="text-brand-600 dark:text-brand-400">Snowfall</span> Difference
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
@@ -82,7 +82,7 @@ const AboutUs = ({ isGlobal }) => {
 
       {/* Leadership Placeholder */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[70rem] mx-auto text-center">
-         <h2 className="text-4xl lg:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-12">
+         <h2 className="text-4xl lg:text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-12">
           Your <span className="text-brand-600 dark:text-brand-400">Guides</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">

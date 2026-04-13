@@ -9,7 +9,7 @@ const Growth = ({ isGlobal }) => {
           <span className="w-2 h-2 rounded-full bg-gradient-to-r from-brand-600 to-brand-400 shadow-md animate-pulse"></span>
           <span className="text-xs font-semibold tracking-widest uppercase text-brand-800 dark:text-brand-200">Scale & Capital</span>
         </div>
-        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-6">
+        <h1 className="text-5xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter pb-1 mb-6">
           Growth & <span className="text-brand-600 dark:text-brand-400">Funding</span>
         </h1>
         <p className="text-xl lg:text-2xl text-brand-800/80 dark:text-brand-200/80 max-w-3xl mx-auto font-light leading-relaxed">
@@ -25,7 +25,7 @@ const Growth = ({ isGlobal }) => {
             <div className="w-24 h-24 bg-brand-50 dark:bg-brand-800 rounded-3xl flex items-center justify-center text-brand-600 dark:text-brand-400 group-hover:scale-110 group-hover:bg-gradient-to-r from-brand-600 to-brand-400 shadow-md group-hover:text-brand-50 transition-all duration-500">
               <TrendingUp size={48} />
             </div>
-            <h2 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-700 dark:from-white dark:to-brand-200 tracking-tighter">
+            <h2 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-950 to-brand-800 dark:from-white dark:to-brand-200 tracking-tighter">
               The Growth Engine
             </h2>
           </div>
