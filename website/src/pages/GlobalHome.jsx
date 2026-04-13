@@ -43,11 +43,11 @@ const GlobalHome = () => {
               <p className="text-brand-950/80 dark:text-brand-200 font-medium">Businesses Trust Us</p>
             </div>
           </div>
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">$50M+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Cross-Border Capital</p>
           </div>
-          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm -translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
+          <div className="bg-white dark:bg-gradient-to-tr from-brand-900 to-brand-800 border shadow-lg-2 border-transparent p-8 rounded-[2rem] flex flex-col justify-end aspect-square shadow-sm md:-translate-y-8 hover:scale-[1.02] hover:border-brand-400 transition-all cursor-default group">
              <p className="text-4xl md:text-5xl font-black tracking-tighter mb-2 text-brand-950 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">100+</p>
              <p className="text-brand-800 dark:text-brand-200 font-medium">Certified Professionals</p>
           </div>
@@ -81,7 +81,7 @@ const GlobalHome = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[24rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[24rem]">
           {/* Large Card */}
           <div className="md:col-span-2 bg-gradient-to-br from-brand-950 to-brand-800 dark:from-brand-900 dark:to-brand-800 shadow-xl text-brand-50 p-8 md:p-12 rounded-[2.5rem] relative overflow-hidden group hover:shadow-2xl hover:shadow-brand-950/20 hover:-translate-y-2 transition-all duration-500 cursor-default">
             <div className="absolute top-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-r from-brand-600 to-brand-400 shadow-md rounded-full blur-[120px] opacity-20 -translate-y-1/2 translate-x-1/4 group-hover:scale-110 group-hover:opacity-40 transition-all duration-700"></div>
