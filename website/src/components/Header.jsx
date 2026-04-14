@@ -47,7 +47,7 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 py-4 md:py-6 px-4 transition-all duration-500 hover:opacity-100 ${isScrolled ? (isHovered ? "bg-white/95 dark:bg-brand-950/95 backdrop-blur-md shadow-md opacity-100" : "bg-white/70 dark:bg-brand-950/70 backdrop-blur-sm shadow-sm opacity-30") : "bg-transparent border-b border-transparent opacity-100"}`}
+      className={`fixed top-0 left-0 right-0 z-50 py-4 md:py-6 px-4 transition-all duration-500 bg-transparent ${isScrolled ? (isHovered ? "opacity-100 backdrop-blur-sm" : "opacity-30") : "opacity-100"} pointer-events-none`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
