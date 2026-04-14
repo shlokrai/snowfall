@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import bgImage from '../assets/coming-soon-bg.jpg';
 
 const ComingSoonPage = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -23,7 +24,7 @@ const ComingSoonPage = () => {
       <div 
         className="absolute inset-0 w-[110%] h-[110%] -left-[5%] -top-[5%] bg-cover bg-center transition-transform duration-200 ease-out"
         style={{
-          backgroundImage: 'url("/src/assets/coming-soon-bg.jpg")',
+          backgroundImage: `url(${bgImage})`,
           transform: `translate(${mousePos.x * -20}px, ${mousePos.y * -20}px)`
         }}
       >
