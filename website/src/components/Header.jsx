@@ -8,10 +8,20 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
     return localStorage.getItem('theme') === 'dark';
   });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
   const isGlobal = location.pathname.includes('/global');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -36,7 +46,11 @@ const Header = ({ toggleSnowfall, isSnowingGlobally }) => {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 py-4 md:py-6 px-4 bg-transparent border-b border-transparent">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 py-4 md:py-6 px-4 transition-all duration-500 hover:opacity-100 ${isScrolled ? (isHovered ? "bg-white/95 dark:bg-brand-950/95 backdrop-blur-md shadow-md opacity-100" : "bg-white/70 dark:bg-brand-950/70 backdrop-blur-sm shadow-sm opacity-30") : "bg-transparent border-b border-transparent opacity-100"}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div className="max-w-[70rem] mx-auto flex items-center justify-between pointer-events-none">
         
         {/* Left Side: Logo via Link */}
