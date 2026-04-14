@@ -13,12 +13,10 @@ import Articles from './pages/Articles';
 import Compliance from './pages/Compliance';
 import Growth from './pages/Growth';
 import Network from './pages/Network';
-import ComingSoonPage from './pages/ComingSoonPage';
 
 function AppContent() {
   const location = useLocation();
   const isGlobal = location.pathname.includes('/global');
-  const isComingSoon = location.pathname.includes('/coming-soon');
   
   const [isLoading, setIsLoading] = useState(false);
   const [isSnowingGlobally, setIsSnowingGlobally] = useState(false);
@@ -44,7 +42,7 @@ function AppContent() {
     <div className={`flex flex-col min-h-screen font-sans bg-gray-50 text-gray-900 ${isGlobal ? 'global-theme' : ''}`}>
       {isSnowingGlobally && <GlobalSnowfall />}
       {isLoading && <LoadingScreen transitionState={transitionState} />}
-      {!isComingSoon && <Header isSnowingGlobally={isSnowingGlobally} toggleSnowfall={() => setIsSnowingGlobally(!isSnowingGlobally)} />}
+      <Header isSnowingGlobally={isSnowingGlobally} toggleSnowfall={() => setIsSnowingGlobally(!isSnowingGlobally)} />
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -69,11 +67,10 @@ function AppContent() {
           <Route path="/contact" element={<ContactUs isGlobal={false} />} />
           <Route path="/global/contact" element={<ContactUs isGlobal={true} />} />
           
-          <Route path="/coming-soon" element={<ComingSoonPage />} />
-          <Route path="/global/coming-soon" element={<ComingSoonPage />} />
+
         </Routes>
       </main>
-      {!isComingSoon && <Footer />}
+      <Footer />
     </div>
   );
 }
