@@ -55,9 +55,10 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-sm font-bold text-brand-400 tracking-wider uppercase mb-6">Company</h3>   
+            <h3 className="text-sm font-bold text-brand-400 tracking-wider uppercase mb-6">Company</h3>
             <ul className="space-y-4">
               <li><a href="#about" className="text-brand-50 hover:text-brand-400 transition-colors font-medium">About Us</a></li>
+              <li><Link to={isGlobal ? "/global/coming-soon" : "/coming-soon"} className="text-brand-50 hover:text-brand-400 transition-colors font-medium relative group/link"><span className="absolute -left-3 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-brand-400 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity"></span>Coming Soon</Link></li>
               <li><Link to={isGlobal ? "/global/contact" : "/contact"} className="text-brand-400 hover:text-brand-200 font-bold transition-colors">Contact Us</Link></li>
             </ul>
           </div>
