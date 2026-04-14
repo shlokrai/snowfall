@@ -13,7 +13,7 @@ import Articles from './pages/Articles';
 import Compliance from './pages/Compliance';
 import Growth from './pages/Growth';
 import Network from './pages/Network';
-import ComingSoon from './pages/ComingSoon';
+import ComingSoonPage from './pages/ComingSoonPage';
 
 function AppContent() {
   const location = useLocation();
@@ -69,11 +69,16 @@ function AppContent() {
           <Route path="/contact" element={<ContactUs isGlobal={false} />} />
           <Route path="/global/contact" element={<ContactUs isGlobal={true} />} />
           
-          <Route path="/coming-soon" element={<ComingSoon />} />
-          <Route path="/global/coming-soon" element={<ComingSoon />} />
+          <Route path="/coming-soon" element={<ComingSoonPage />} />
+          <Route path="/global/coming-soon" element={<ComingSoonPage />} />
         </Routes>
       </main>
       {!isComingSoon && <Footer />}
+    </div>
+  );
+}
+
+function App() {
   return (
     <Router>
       <AppContent />
