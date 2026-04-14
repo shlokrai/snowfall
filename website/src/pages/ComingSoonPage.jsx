@@ -23,7 +23,7 @@ const ComingSoonPage = () => {
       <div 
         className="absolute inset-0 w-[110%] h-[110%] -left-[5%] -top-[5%] bg-cover bg-center transition-transform duration-200 ease-out"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")',
+          backgroundImage: 'url("/src/assets/coming-soon-bg.jpg")',
           transform: `translate(${mousePos.x * -20}px, ${mousePos.y * -20}px)`
         }}
       >
